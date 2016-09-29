@@ -1,0 +1,157 @@
+.wrapper {
+  background: url("../img/background/water.jpg") no-repeat;
+  background-size: cover;
+}
+
+.maincontent {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  height: 130px;
+}
+
+.authorization {
+  margin: 20px;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  text-align: center;
+}
+
+.authorization__link {
+  border: 2px solid $white;
+  padding: 8px 15px;
+  border-radius: 25px;
+  color: #fff;
+  font-family: "robotomedium";
+
+  &:hover {
+    background-color: #4e8839;
+    border: 2px solid #819c56;
+  }
+
+}
+
+.welcome {
+  width: 370px;
+  background: rgba(31,53,44,.5);
+  padding-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.user {
+  padding:0 60px;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+.user__foto {
+
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.user__foto-img {
+  display: block;
+  height: 150px;
+}
+
+.user__info {
+  color: $white;
+}
+
+.user__ingo-name {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.user__info-text {
+  color: #c8cdcb;
+}
+
+.socials {
+  margin-bottom: 30px;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+}
+
+.socials__link {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 35px;
+  cursor: pointer;
+
+  &:hover {
+    color: #4e8839;
+    opacity: 1;
+  }
+}
+.nav {
+  
+
+}
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid #a0b99e;
+  width: 100%;
+
+  &:last-child {
+    border-right:0;
+  }
+}
+
+.nav__link {
+  padding: 14px;
+  text-decoration: none;
+  display: block;
+  background-color: #618f54;
+
+  &:hover {
+    background-color: #487f39;
+  }
+}
+
+.nav__text {
+  color: $white;
+  text-align: center;
+}
+
+
+.footer__content {
+  text-align: center;
+}
+
+.footer__text {
+  color: $white;
+  opacity: 0.9;
+
+}
+

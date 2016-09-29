@@ -1,0 +1,49 @@
+extends ../layout
+include ../sections/_mixins.pug
+
+block header
+    .authorization
+        a.authorization__link(href="#") Авторизироваться
+
+block content
+    .welcome
+        .user
+            .user__foto
+                img.user__foto-img(src='./assets/img/avatar/me.jpg' alt="Аватар")
+            .user__info
+                .user__ingo-name
+                    h1 Елизавета Овинова
+                .user__info-text
+                    p Личный сайт веб разработчика
+        .socials
+            ul.socials__list
+                li.socials__item
+                    a.socials__link(href="https://vk.com/id272177")
+                        i(class="fa fa-vk" aria-hidden="true")
+                li.socials__item
+                    a.socials__link(href="https://github.com/Elizaveta89")
+                        i(class="fa fa-github" aria-hidden="true")
+                li.socials__item
+                    a.socials__link(href="https://ru.linkedin.com/")
+                        i(class="fa fa-linkedin" aria-hidden="true")
+
+        + nav('nav', ["Мои работы", "Обо мне", "Блог"])
+        //.nav
+        //    ul.nav__list
+                li.nav__item
+                    a.nav__link(href="#")
+                        .nav__text Мои работы
+                li.nav__item
+                    a.nav__link(href="#")
+                        .nav__text Обо мне
+                li.nav__item
+                    a.nav__link(href="#")
+                        .nav__text Блог
+
+block footer
+    .footer__content
+        .footer__text  © Елизавета Овинова | создано с любовью в LoftSchool | 2016
+
+
+
+

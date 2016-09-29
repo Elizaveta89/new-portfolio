@@ -1,0 +1,20 @@
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+@mixin inlineblock ($valing: top ) {
+  display: inline-block;
+  vertical-align: $valing;
+}
+
+%clearfix {
+  &:after, &:before {
+    content: "";
+    display: table;
+}
+  &:after {
+    clear: both;
+}
+}
+
+
