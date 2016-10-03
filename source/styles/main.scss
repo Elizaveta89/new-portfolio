@@ -1,10 +1,19 @@
 $white: #fff;
 
 
-
+// misc
 @import '_misc/adjustment.scss';
+@import '_misc/_common.scss';
 @import '_misc/mixins.scss';
 @import '_misc/fonts.scss';
 @import '_misc/font-awesome.scss';
 
+//sections
+
+@import 'sections/header.scss';
+@import 'sections/footer.scss';
+
+// pages
 @import 'pages/welcome.scss';
+@import 'pages/authorization.scss';
+@import 'pages/about.scss';

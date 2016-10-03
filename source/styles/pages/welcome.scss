@@ -1,11 +1,6 @@
-.wrapper {
+body {
   background: url("../img/background/water.jpg") no-repeat;
   background-size: cover;
-}
-
-.maincontent {
-  vertical-align: middle;
-  text-align: center;
 }
 
 .header {
@@ -34,6 +29,7 @@
   &:hover {
     background-color: #4e8839;
     border: 2px solid #819c56;
+    transition: 0.2s;
   }
 }
 
@@ -48,8 +44,7 @@
 }
 
 .user {
-  padding:0 60px;
-  width: 70%;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -85,8 +80,7 @@
 }
 
 .socials__item {
-  display: inline-block;
-  vertical-align: middle;
+  @include inlineblock(middle);
   margin-left: 20px;
 
   &:first-child {
@@ -96,7 +90,6 @@
 
 .socials__link {
   color: #ffffff;
-  opacity: 0.7;
   font-size: 35px;
   cursor: pointer;
 
@@ -106,13 +99,16 @@
   }
 }
 
+.socials__link-opacity {
+  opacity: 0.7;
+}
+
 .nav__list {
   display: flex;
 }
 
 .nav__item {
-  display: inline-block;
-  vertical-align: middle;
+  @include inlineblock(middle);
   border-right: 1px solid #a0b99e;
   width: 100%;
 

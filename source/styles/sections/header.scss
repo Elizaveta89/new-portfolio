@@ -1,0 +1,38 @@
+.header__about {
+  background: url("../img/background/water.jpg") no-repeat;
+  background-size: cover;
+}
+
+.header__about-up {
+  @extend %clearfix;
+}
+
+.socials_position {
+  float: left;
+}
+
+.header__menu {
+  float: right;
+  margin: 25px 25px;
+}
+
+.header__menu-img {
+  background-image: url(../img/sprite.png);
+  background-position: -1728px -165px;
+  width: 40px;
+  height: 35px;
+}
+
+.user__center {
+  margin-bottom: 110px;
+}
+
+.arrow__down {
+  text-align: center;
+}
+
+.arrow__down-pic {
+  color: $white;
+  margin-bottom: 60px;
+}
+
