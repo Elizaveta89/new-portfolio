@@ -12,49 +12,83 @@ block body
 
             block header__about
             include ../sections/header.pug
+                svg(class="triangle-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none")
+                    polygon(class="triangle__about-left" points="0,0   0,86   500.8,86   500.8,75.5")
+                    polygon(class="triangle__about-right" points="1000,00   1000,86   500,86   500,75.5")
             block content
                 .content__about
                     .about__left
+                        .about__img
                         .about__left-title.general__title
-                            span ОБО МНЕ
+                            span Обо мне
                         .about__left-info
                             .about__left-foto
                                 img.about__left-img(src="./assets/img/avatar/me.jpg" alt="Аватар")
                             .general__title
-                                span КТО Я
+                                span Кто я
                             .about__text
                                 p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                                 p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
                     .about__right
                         .about__right-info
-                            .general__title
-                                span ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
-                            .about__text
+                            .general__title.about__right-title
+                                span Чем я могу быть вам полезна
+                            .about__text.about__right-text
                                 p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
                             .skills
                                 .skills__block
                                     .skills__title Frontend
                                     ul.skills__list
-                                        li.skills__item HTML5
-                                        li.skills__item CSS3
-                                        li.skills__item JavaScript & jQuery
-                                .skills__block
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text HTML
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text CSS3
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text.skills__circle-js JavaScript&Jquery
+                                    .skills__block
                                     .skills__title Backend
                                     ul.skills__list
-                                        li.skills__item PHP
-                                        li.skills__item mySQL
-                                        li.skills__item Node.js & npm
-                                        li.skills__item Mongo.db
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text PHP
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text mySQL
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text Node.js & npm
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text Mongo.db
                                 .skills__block
                                     .skills__title WorkFlow
                                     ul.skills__list
-                                        li.skills__item Git
-                                        li.skills__item Gulp
-                                        li.skills__item Bower
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text Git
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text Gulp
+                                        li.skills__item
+                                            .skills__circle
+                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
+                                                span.skills__circle-text Bower
                 .contacts__map
                     .contacts__window
                         .general__title
-                            span КОНТАКТЫ
+                            span Контакты
                         ul.contacts__list
                             li.contacts__item
                                 a.contacts__link(href="#")

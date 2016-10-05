@@ -18,13 +18,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-about {
   background-image: url(../img/sprite.png);
-  background-position: -1263px -165px;
+  background-position: -1293px -195px;
   width: 357px;
   height: 125px;
 }
 .icon-arrow_down {
   background-image: url(../img/sprite.png);
-  background-position: -1392px -290px;
+  background-position: -1602px -350px;
   width: 108px;
   height: 71px;
 }
@@ -36,121 +36,139 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-check {
   background-image: url(../img/sprite.png);
-  background-position: -1571px -290px;
+  background-position: -1637px -500px;
   width: 79px;
   height: 58px;
 }
 .icon-checkbox-active {
   background-image: url(../img/sprite.png);
-  background-position: -1728px -236px;
+  background-position: -1452px -626px;
   width: 21px;
   height: 20px;
 }
 .icon-checkbox {
   background-image: url(../img/sprite.png);
-  background-position: -1644px -257px;
+  background-position: -1503px -626px;
   width: 21px;
   height: 20px;
 }
+.icon-circle {
+  background-image: url(../img/sprite.png);
+  background-position: -1293px -350px;
+  width: 120px;
+  height: 120px;
+}
 .icon-close {
   background-image: url(../img/sprite.png);
-  background-position: -1728px -200px;
+  background-position: -1746px -500px;
   width: 36px;
   height: 36px;
 }
 .icon-envelope {
   background-image: url(../img/sprite.png);
-  background-position: -1685px -257px;
+  background-position: -1654px -626px;
   width: 23px;
   height: 16px;
 }
 .icon-github {
   background-image: url(../img/sprite.png);
-  background-position: -1620px -165px;
+  background-position: -1680px -195px;
   width: 108px;
   height: 92px;
 }
 .icon-hamburger {
   background-image: url(../img/sprite.png);
-  background-position: -1728px -165px;
+  background-position: -1740px -350px;
   width: 40px;
   height: 35px;
 }
 .icon-in {
   background-image: url(../img/sprite.png);
-  background-position: -1263px -365px;
+  background-position: -1293px -500px;
   width: 100px;
   height: 96px;
 }
 .icon-link {
   background-image: url(../img/sprite.png);
-  background-position: -1363px -365px;
+  background-position: -1423px -500px;
   width: 83px;
   height: 83px;
 }
 .icon-login {
   background-image: url(../img/sprite.png);
-  background-position: -1263px -461px;
+  background-position: -1293px -717px;
   width: 63px;
   height: 67px;
 }
 .icon-map_marker {
   background-image: url(../img/sprite.png);
-  background-position: -1650px -310px;
+  background-position: -1293px -814px;
   width: 16px;
   height: 21px;
 }
 .icon-password {
   background-image: url(../img/sprite.png);
-  background-position: -1500px -290px;
+  background-position: -1536px -500px;
   width: 71px;
   height: 67px;
 }
 .icon-phone {
   background-image: url(../img/sprite.png);
-  background-position: -1650px -290px;
+  background-position: -1482px -717px;
   width: 17px;
   height: 20px;
 }
+.icon-portf_arrow_left {
+  background-image: url(../img/sprite.png);
+  background-position: -1386px -717px;
+  width: 18px;
+  height: 29px;
+}
+.icon-portf_arrow_right {
+  background-image: url(../img/sprite.png);
+  background-position: -1434px -717px;
+  width: 18px;
+  height: 29px;
+}
 .icon-portfolio {
   background-image: url(../img/sprite.png);
-  background-position: 0px -871px;
+  background-position: 0px -901px;
   width: 1176px;
   height: 313px;
 }
 .icon-quote {
   background-image: url(../img/sprite.png);
-  background-position: -1446px -365px;
+  background-position: -1293px -626px;
   width: 75px;
   height: 61px;
 }
 .icon-radio-active {
   background-image: url(../img/sprite.png);
-  background-position: -1749px -236px;
+  background-position: -1554px -626px;
   width: 20px;
   height: 20px;
 }
 .icon-radio {
   background-image: url(../img/sprite.png);
-  background-position: -1665px -257px;
+  background-position: -1604px -626px;
   width: 20px;
   height: 20px;
 }
 .icon-skype {
   background-image: url(../img/sprite.png);
-  background-position: -1620px -257px;
+  background-position: -1398px -626px;
   width: 24px;
   height: 24px;
 }
 .icon-vk {
   background-image: url(../img/sprite.png);
-  background-position: -1263px -290px;
+  background-position: -1443px -350px;
   width: 129px;
   height: 75px;
 }
 .icon-works {
   background-image: url(../img/sprite.png);
-  background-position: -1263px 0px;
+  background-position: -1293px 0px;
   width: 506px;
   height: 165px;
 }

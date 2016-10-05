@@ -1,10 +1,12 @@
 .header__about {
+  position: relative;
   background: url("../img/background/water.jpg") no-repeat;
   background-size: cover;
 }
 
 .header__about-up {
   @extend %clearfix;
+  padding: 20px;
 }
 
 .socials_position {
@@ -13,26 +15,41 @@
 
 .header__menu {
   float: right;
-  margin: 25px 25px;
+  margin: 20px 20px;
 }
 
 .header__menu-img {
   background-image: url(../img/sprite.png);
-  background-position: -1728px -165px;
+  background-position: -1740px -350px;
   width: 40px;
   height: 35px;
 }
 
-.user__center {
-  margin-bottom: 110px;
+.header__about-user {
+  background: url("../img/icons/portfolio.png") no-repeat;
 }
 
-.arrow__down {
-  text-align: center;
+.user__about {
+  margin-bottom: 65px;
+  padding: 45px;
 }
 
-.arrow__down-pic {
-  color: $white;
-  margin-bottom: 60px;
+.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: -120px;
+  transform: translate(-50%, -50%);
 }
+
+.arrow__pic {
+  color: #c4d5cc;
+  font-size: 35px;
+  opacity: 0.9;
+}
+
+ .triangle {
+   position: relative;
+   top: 4px;
+   fill: #f8f9f5;
+ }
 

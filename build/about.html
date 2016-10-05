@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="shortcut icon" href="./assets/img/background/fav_forest.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/foundation.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="./assets/js/foundation.js" defer></script>
@@ -27,7 +28,7 @@
                 <div class="header__menu-img"></div></a></div>
           </div>
           <div class="header__about-user">
-            <div class="user user__center">
+            <div class="user user__about">
               <div class="user__foto"><img class="user__foto-img" src="./assets/img/avatar/me.jpg" alt="Аватар"></div>
               <div class="user__info">
                 <div class="user__info-name">
@@ -39,14 +40,19 @@
               </div>
             </div>
           </div>
-          <div class="arrow__down"><i class="fa fa-chevron-down arrow__down-pic" aria-hidden="true"></i></div>
+          <div class="arrow"><a class="arrow__link"><i class="fa fa-chevron-down arrow__pic" aria-hidden="true"></i></a></div>
         </div>
+        <svg class="triangle-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none">
+          <polygon class="triangle__about-left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+          <polygon class="triangle__about-right" points="1000,00   1000,86   500,86   500,75.5"></polygon>
+        </svg>
         <div class="content__about">
           <div class="about__left">
-            <div class="about__left-title general__title"><span>ОБО МНЕ</span></div>
+            <div class="about__img"></div>
+            <div class="about__left-title general__title"><span>Обо мне</span></div>
             <div class="about__left-info">
               <div class="about__left-foto"><img class="about__left-img" src="./assets/img/avatar/me.jpg" alt="Аватар"></div>
-              <div class="general__title"><span>КТО Я</span></div>
+              <div class="general__title"><span>Кто я</span></div>
               <div class="about__text">
                 <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
                 <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
@@ -55,34 +61,53 @@
           </div>
           <div class="about__right">
             <div class="about__right-info">
-              <div class="general__title"><span>ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН</span></div>
-              <div class="about__text">
+              <div class="general__title about__right-title"><span>Чем я могу быть вам полезна</span></div>
+              <div class="about__text about__right-text">
                 <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.</p>
               </div>
               <div class="skills">
                 <div class="skills__block">
                   <div class="skills__title">Frontend</div>
                   <ul class="skills__list">
-                    <li class="skills__item">HTML5</li>
-                    <li class="skills__item">CSS3</li>
-                    <li class="skills__item">JavaScript & jQuery</li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">HTML</span></div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">CSS3</span></div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text skills__circle-js">JavaScript&Jquery</span></div>
+                    </li>
                   </ul>
-                </div>
-                <div class="skills__block">
+                  <div class="skills__block"></div>
                   <div class="skills__title">Backend</div>
                   <ul class="skills__list">
-                    <li class="skills__item">PHP</li>
-                    <li class="skills__item">mySQL</li>
-                    <li class="skills__item">Node.js & npm</li>
-                    <li class="skills__item">Mongo.db</li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">PHP</span></div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">mySQL</span></div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">Node.js & npm</span></div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">Mongo.db</span></div>
+                    </li>
                   </ul>
                 </div>
                 <div class="skills__block">
                   <div class="skills__title">WorkFlow</div>
                   <ul class="skills__list">
-                    <li class="skills__item">Git</li>
-                    <li class="skills__item">Gulp</li>
-                    <li class="skills__item">Bower</li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">Git</span></div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">Gulp</span></div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__circle"><img class="skills__circle-pic" src="./assets/img/icons/circle.png"><span class="skills__circle-text">Bower</span></div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -91,7 +116,7 @@
         </div>
         <div class="contacts__map">
           <div class="contacts__window">
-            <div class="general__title"><span>КОНТАКТЫ</span></div>
+            <div class="general__title"><span>Контакты</span></div>
             <ul class="contacts__list">
               <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/skype.png" alt="Скайп"><span class="contacts__item-text">stopangina</span></a></li>
               <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/envelope.png" alt="Почта"><span class="contacts__item-text">eovinova89@gmail.com</span></a></li>

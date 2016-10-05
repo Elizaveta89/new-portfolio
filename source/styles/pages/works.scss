@@ -1,0 +1,263 @@
+.works__title {
+  background-color: #f8f9f5;
+}
+
+.works__title-color {
+  color: #373e42;
+  font-size: 63px;
+  padding: 60px;
+  background: url(../img/icons/works.png) no-repeat;
+  background-position: 70px 5px;
+  max-width: 500px;
+}
+
+.works__title-img {
+  background: url(../img/icons/about.png) no-repeat;
+  background-position: 7px 8px;
+  background-size: contain;
+}
+
+.slider {
+  position: relative;
+  background-color: #ebefe2;
+  padding: 50px 50px 0 50px;
+}
+
+.slider__item {
+  @extend %clearfix;
+}
+
+.slider__left {
+  float:left;
+  width: 50%;
+}
+.slider__left-img {
+  padding: 50px 50px 0 50px;
+}
+
+.slider__right {
+  float: right;
+  box-sizing: border-box;
+  width: 50%;
+  padding:50px;
+  height: 100%;
+}
+
+.slider__right-content {
+  @include inlineblock(middle);
+  margin-top: 190px;
+  position: relative;
+}
+
+.slider-title {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  &:after {
+    margin: 30px -1px;
+  }
+}
+
+.slider__right-list {
+  text-align: left;
+  margin-bottom: 50px;
+
+}
+
+.slider__right-item {
+  @include inlineblock(middle);
+}
+
+.slider__right-text {
+  color: #4e8839;
+  font-family: $font-medium;
+}
+
+.slider__button {
+  position: absolute;
+  width: 200px;
+  height: 45px;
+  left: 0;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #6c9c5a;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #538241;
+    transion: 0.2s;
+  }
+}
+
+.slider__button-link {
+  color: $white;
+  opacity: 0.8;
+}
+
+.slider__button-fa {
+  font-size: 25px;
+  margin-right: 10px;
+  opacity: 1;
+  vercal-align: middle;
+}
+
+.slider__arrows-left {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  bottom: 50%;
+  top: 50%;
+}
+
+.slider__arrows-right {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  bottom: 50%;
+  top: 50%;
+}
+
+.slider__dots {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.slider__dots-item {
+  @include inlineblock(middle);
+  border: 2px solid #6c9c5a;
+  background-color: $white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    background-color: #6c9c5a;
+  }
+}
+.works__bottom {
+  position: relative;
+  background-color: #f4f5f0;
+  background: url(../img/background/bg_works2.png) 50% no-repeat;
+  background-size: cover;
+  background-position-y: 200px;
+  height: 1200px;
+}
+
+.works__quote {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.quot__item {
+  @include inlineblock(middle);
+  width: 380px;
+}
+.quote__foto {
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+}
+
+.quote__text {
+  font-family: 'robotoitalic';
+  color: #a3a29d;
+  text-align: left;
+  margin:20px;
+}
+
+.quote__name-text {
+  display: block;
+  color: #85837e;
+  font-family: 'robotobold_italic';
+}
+
+.quote__name-fonts {
+  display: block;
+  color: #444a4e;
+}
+
+.works__feedback {
+  width: 380px;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(235, 235, 232, 0.7);
+  border-radius: 7px;
+  margin-bottom: 60px;
+}
+
+.feedback__input {
+  box-sizing: border-box;
+  height: 40px;
+  border: none;
+  line-height: 40px;
+  padding: 0 10px;
+  width: 90%;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.feedback__textarea {
+  box-sizing: border-box;
+  height: 140px;
+  border: none;
+  padding: 10px;
+  width: 90%;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.feedback__button {
+  @extend %clearfix;
+}
+
+.button {
+  float: left;
+  width: 50%;
+  height: 45px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 12px 20px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  background-color: #78a066;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #659753;
+  }
+}
+
+.button__submit {
+  border-right: 1px solid #a0b99e;
+  border-radius: 0 0 0 7px;
+}
+
+.button__reset{
+  border-radius: 0 0 7px 0;
+}
+
+.arrow__up {
+  bottom: 0;
+
+}
+
+.triangle {
+  position: relative;
+  top: 7px;
+  fill: #f8f9f5;
+}

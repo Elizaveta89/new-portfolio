@@ -27,18 +27,19 @@
 
 .general__title {
   font-family: 'sansus_webissimoregular';
+  text-transform: uppercase;
   color: #566358;
   font-size: 35px;
-  padding: 20px;
-  max-width: 265px;
+  max-width: 340px;
   margin: auto;
+  line-height: 1.5;
+  padding-top: 10px;
 
   &:after {
     content:"";
     display: block;
     width: 95px;
-    margin: 30px auto;
+    margin: 20px auto;
     border: 1px solid #566358;;
 }
-
 }

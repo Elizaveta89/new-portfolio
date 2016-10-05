@@ -15,6 +15,10 @@
   font-size: 35px;
   color: $white;
   margin-bottom: 20px;
+  
+  &:after {
+    border-color: $white;
+  }
 }
 
 .authorization__border {
@@ -34,6 +38,7 @@
   width: 340px;
   margin: 0 auto 20px;
   font-size: 0;
+  line-height: 1.15;
 }
 
 .form__input {
@@ -71,7 +76,7 @@
   @extend .input;
 
   &:before {
-    background-position: -1644px -257px;
+    background-position: -1503px -626px;
   }
 }
 
@@ -80,7 +85,7 @@
 }
 
 .form__input-checkbox:checked + .form__label-checkbox:before {
-  background-position: -1728px -236px;
+  background-position: -1452px -626px;
 }
 
 .form__checkbox-text {
@@ -104,7 +109,7 @@
   @extend .input;
 
   &:before {
-    background-position: -1665px -257px;
+    background-position: -1604px -626px;
   }
 }
 
@@ -117,7 +122,7 @@
 }
 
 .form__radio-input:checked + .form__label-radio:before {
-  background-position: -1749px -236px;
+  background-position: -1554px -626px;
 }
 
 

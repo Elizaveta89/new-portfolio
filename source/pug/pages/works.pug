@@ -1,0 +1,105 @@
+extends ../layout
+include ../sections/_mixins.pug
+
+block title
+    title Works
+
+block body
+    .wrapper
+        .maincontent
+            block header__about
+                include ../sections/header.pug
+                    svg(class="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none")
+                        polygon(class="triangle__left" points="0,0   0,86   500.8,86   500.8,75.5")
+                        polygon(class="triangle__right" points="1000,00   1000,86   500,86   500,75.5")
+            block content
+                .container
+                    section.works__title
+                        .general__title.works__title-color МОИ РАБОТЫ
+                    section.slider
+                        ul.slider__list
+                            li.slider__item
+                                .slider__left
+                                    img.slider__left-img(src="./assets/img/works/work-1.png")
+                                .slider__right
+                                    .slider__right-content
+                                        .slider__title
+                                            .general__title.slider-title Сайт школы онлайн образования
+                                        ul.slider__right-list
+                                            li.slider__right-item
+                                                span.slider__right-text HTML,
+                                            li.slider__right-item
+                                                span.slider__right-text CSS,
+                                            li.slider__right-item
+                                                span.slider__right-text JAVASCRIPT
+                                        button.slider__button
+                                            a.slider__button-link
+                                                i(class="fa fa-link slider__button-fa" aria-hidden="true")
+                                                span Посмотреть сайт
+                                .slider__arrows
+                                    .slider__arrows-left
+                                        a.slider__arrows-link
+                                            img.slider__arrows-img(src="./assets/img/icons/portf_arrow_left.png")
+                                    .slider__arrows-right
+                                        a.slider__arrows-link
+                                            img.slider__arrows-img(src="./assets/img/icons/portf_arrow_right.png")
+                                .slider__dots
+                                    ul.slider__dots-list
+                                        li.slider__dots-item
+                                            a.slider__dots-link
+                                        li.slider__dots-item
+                                            a.slider__dots-link
+                                        li.slider__dots-item
+                                            a.slider__dots-link
+                                        li.slider__dots-item
+                                            a.slider__dots-link
+                    section.works__bottom
+                        .works__bottom-title
+                            .general__title.works__title-img.works__title-color Что обо мне говорят
+                        .works__quote
+                            ul.quote__list
+                                li.quot__item
+                                    .quote__foto
+                                        img.quot__foto-img(src="./assets/img/avatar/foto-dima.jpg" alt="Дмитрий Ковальчук")
+                                    .quote__text
+                                        span Эта девушка проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                                    .quot__name
+                                        span.quote__name-text Ковальчук Дмитрий
+                                        span.quote__name-fonts - основатель Loftschool
+                                li.quot__item
+                                    .quote__foto
+                                        img.quot__foto-img(src="./assets/img/avatar/foto-zar.jpg" alt="Зар Захаров")
+                                    .quote__text
+                                        span Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                                    .quot__name
+                                        span.quote__name-text Зар Захаров
+                                        span.quote__name-fonts - преподаватель
+                        .works__feedback
+                            .feedback__title
+                                .general__title Связаться со мной
+                            .feedback__form
+                                label.feedback__label
+                                    input.feedback__input(name="name" type="name" placeholder="Имя" required)
+                                label.feedback__label
+                                    input.feedback__input(name="mail" type="email" placeholder="Email" required)
+                                label.feedback__label
+                                    textarea.feedback__textarea(name="textarea" type="text" placeholder="Ваше сообщение" required)
+                                .feedback__button
+                                    button.button.button__submit(type="submit") Отправить
+                                    button.button.button__reset(type="reset") Очистить
+                        .arrow.arrow__up
+                            a.arrow__link
+                                i(class="fa fa-chevron-up arrow__pic" aria-hidden="true")
+block footer
+    include ../sections/footer.pug
+
+
+
+
+
+
+
+
+
+
+
