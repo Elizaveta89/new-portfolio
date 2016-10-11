@@ -13,32 +13,74 @@
   float: left;
 }
 
-.header__menu {
+.header__menu-button {
   float: right;
   margin: 20px 20px;
-}
-
-.header__menu-img {
   background-image: url(../img/sprite.png);
   background-position: -1740px -350px;
   width: 40px;
   height: 35px;
+  cursor: pointer;
+}
+
+.header__menu-button_active {
+  background-image: url(../img/sprite.png);
+  background-position: -1746px -500px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.header__menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: rgba(126, 155, 92, 0.8);
+  padding-top: 100px;
+}
+
+.header__menu-active {
+  display: block;
+}
+
+.header__menu-item {
+  margin: 50px  0;
+  padding-bottom: 20px;
+  &:hover {
+    &:after {
+      content: "";
+      border: 1px solid white;
+      width: 100px;
+      margin: auto;
+      display: block;
+      margin-top: 20px;
+      transition: 2s;
+    }
+  }
+}
+
+.header__menu-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 63px;
+  font-family: $font-sansus;
+  cursor: pointer;
 }
 
 .header__about-user {
   background: url("../img/icons/portfolio.png") no-repeat;
+  @include tablets {
+    background-size: contain;
+  }
 }
 
 .user__about {
   margin-bottom: 65px;
   padding: 45px;
-}
-
-.arrow {
-  position: absolute;
-  left: 50%;
-  bottom: -120px;
-  transform: translate(-50%, -50%);
 }
 
 .arrow__pic {
@@ -52,4 +94,6 @@
    top: 4px;
    fill: #f8f9f5;
  }
+
+
 

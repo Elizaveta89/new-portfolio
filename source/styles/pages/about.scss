@@ -1,9 +1,27 @@
 .wrapper__about {
   background: none;
+  .triangle__left {
+    fill: #ebefe2;
+  }
+  .triangle__right {
+    fill: #f4f5f0;
+  }
+  @include laptop {
+    .triangle {
+      top: 8px;
+    }
+  }
+  @include tablets {
+    .triangle {
+      top: 9px;
+    }
+    .triangle__right {
+      fill: #ebefe2;
+    }
+  }
 }
 
 .content__about {
-  max-width: 1800px;
   @extend %clearfix;
 }
 
@@ -12,37 +30,80 @@
   width: 50%;
   background-color: #ebefe2;
   position: relative;
+  padding-bottom: 133px;
+  @include laptop {
+    padding-bottom: 75px;
+  }
+  @include tablets {
+    float: none;
+    width: 100%;
+  }
 }
 
 .about__left-title {
-  display: inline-block;
-  vertical-align: middle;
+  @include inlineblock();
   font-size: 63px;
+  padding-right: 100px;
+  @include laptop {
+    padding: 0;
+    display: block;
+    vertical-align: baseline;
+  }
+  @include mini-phones {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
 }
+
+
 .about__img {
   width: 400px;
   height: 200px;
   position: absolute;
   background: url(../img/icons/about.png) no-repeat;
   background-position: 0 23px;
-  top: -7%;
-  left: 23%;
+  top: -5%;
+  left: 3%;
+  @include laptop {
+    left: 21%;
+  }
+  @include tablets {
+    left: 27%;
+  }
+  @include phones {
+    left: 12%;
+  }
+  @include mini-phones {
+    left: 18%;
+    background-size: contain;
+    width: 200px;
+    height: 100px;
+  }
 }
 
 .about__left-info {
   @include inlineblock(middle);
   padding-bottom:20px;
   width: 450px;
+  @include mini-phones {
+    width: auto;
+    display: block;
+    vertical-align: baseline;
+    padding: 20px 5px;
+  }
 }
 
 .about__left-foto {
   margin-bottom: 20px;
-
 }
 
 .about__left-img {
   width: 450px;
   height: 400px;
+  @include mini-phones{
+    width: 320px;
+    height: 290px;
+  }
 }
 
 .about__text {
@@ -63,7 +124,12 @@
   width: 50%;
   background-color: #f4f5f0;
   @extend %clearfix;
+  @include tablets {
+    float: none;
+    width: 100%;
+  }
 }
+
 .about__right-info {
   padding: 0 20px;
 }
@@ -71,29 +137,50 @@
 .about__right-title {
   max-width: 280px;
   margin-bottom: 40px;
+  @include tablets {
+    max-width: 270px;
+  }
 }
 
 .about__right-text {
-  max-width: 550px;
+  max-width: 900px;
   margin-bottom: 30px;
   line-height: 1.5;
+  @include laptop {
+    max-width: 550px;
+  }
+  @include tablets {
+    max-width: 470px;
+  }
 }
 
 .skills {
   margin-bottom: 60px;
+  @include laptop{
+    margin-bottom: 93px;
+  }
 }
 
 .skills__title {
   font-family: $font-medium;
   font-size: 28px;
   padding: 15px;
-  padding-bottom: 0;
   text-align: left;
   color: #566358;
+  @include tablets {
+    padding-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .skills__list {
   text-align: left;
+  @include laptop {
+    margin-bottom: 20px;
+  }
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .skills__item{
@@ -102,7 +189,9 @@
   position: relative;
   width: 110px;
   height: 110px;
-
+  @include laptop {
+    padding:10px;
+  }
 }
 
 .skills__circle-text {
@@ -122,6 +211,7 @@
   background: url("../img/background/map.png") no-repeat;
   background-size: cover;
   position: relative;
+  padding-bottom: 300px;
 }
 
 .contacts__window {
@@ -132,6 +222,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include tablets {
+    top: 40%;
+  }
+  @include phones {
+    top: 14%;
+  }
+  @include mini-phones {
+    top: 14%;
+  }
 }
 
 .contacts__list {
@@ -140,24 +239,11 @@
 }
 
 .contacts__item {
-  @include inlineblock(middle);
   margin-bottom: 15px;
 }
 
 .contacts__item-text {
   color: #65777c;
   padding-left: 20px;
-
 }
 
-.triangle-about {
-  position: relative;
-  top: 7px;
-}
-
-.triangle__about-left{
-  fill: #ebefe2;
-}
-.triangle__about-right {
-  fill: #f4f5f0;
-}

@@ -14,51 +14,52 @@ block body
                         a.authorization__link(href="#") Авторизироваться
 
             block content
-                .welcome
-                        .user
-                            .user__foto
-                                img.user__foto-img(src='./assets/img/avatar/me.jpg' alt="Аватар")
-                            .user__info
-                                .user__info-name
-                                    h1 Елизавета Овинова
-                                .user__info-text
-                                    p Личный сайт веб разработчика
-                        .socials
-                            ul.socials__list
-                                li.socials__item
-                                    a.socials__link.socials__link-opacity(href="https://vk.com/id272177" target="_blank")
-                                        i(class="fa fa-vk" aria-hidden="true")
-                                li.socials__item
-                                    a.socials__link.socials__link-opacity(href="https://github.com/Elizaveta89" target="_blank")
-                                        i(class="fa fa-github" aria-hidden="true")
-                                li.socials__item
-                                    a.socials__link.socials__link-opacity(href="https://ru.linkedin.com/" target="_blank")
-                                        i(class="fa fa-linkedin" aria-hidden="true")
+                .content__welcome
+                    .welcome
+                            .user
+                                .user__foto
+                                    img.user__foto-img(src='./assets/img/avatar/me.jpg' alt="Аватар")
+                                .user__info
+                                    .user__info-name
+                                        h1 Елизавета Овинова
+                                    .user__info-text
+                                        p Личный сайт веб разработчика
+                            .socials
+                                ul.socials__list
+                                    li.socials__item
+                                        a.socials__link.socials__link-opacity(href="https://vk.com/id272177" target="_blank")
+                                            i(class="fa fa-vk" aria-hidden="true")
+                                    li.socials__item
+                                        a.socials__link.socials__link-opacity(href="https://github.com/Elizaveta89" target="_blank")
+                                            i(class="fa fa-github" aria-hidden="true")
+                                    li.socials__item
+                                        a.socials__link.socials__link-opacity(href="https://ru.linkedin.com/" target="_blank")
+                                            i(class="fa fa-linkedin" aria-hidden="true")
 
-                        +nav('nav', ["Мои работы", "Обо мне", "Блог"], ["works.html", "about.html", "blog.html"])
-                .authorization__menu
-                    .authorization__title.general__title АВТОРИЗИРУЙТЕСЬ
-                    .authorization__form
-                        label.form__label
-                            i(class="fa fa-user form__label-icon" aria-hidden="true")
-                            input.form__input(name="login" placeholder="Логин")
-                        label.form__label
-                            i(class="fa fa-key form__label-icon" aria-hidden="true")
-                            input.form__input(name="password" type="password" placeholder="Пароль")
-                        .form__checkbox
-                            input.form__input-checkbox(type="checkbox" name="captcha" id="checkbox1")
-                            label.form__label-checkbox(for="checkbox1")
-                                span.form__checkbox-text Я человек
-                        .form__radio
-                            .form__radio-title Вы точно не робот?
-                            .form__radio-block
-                                input.form__radio-input(type="radio" name="radio-captcha" id="yes")
-                                label.form__label-radio(for="yes")
-                                    span.form__radio-text Да
-                                input.form__radio-input(type="radio" name="radio-captcha" id="no")
-                                label.form__label-radio(for="no")
-                                    span.form__radio-text Не уверен
-                    +nav('nav', ["На главную", "Войти"], ["#","#"])
+                            +nav('nav', ["Мои работы", "Обо мне", "Блог"], ["works.html", "about.html", "blog.html"])
+                    .authorization__menu
+                        .authorization__title.general__title АВТОРИЗИРУЙТЕСЬ
+                        .authorization__form
+                            label.form__label
+                                i(class="fa fa-user form__label-icon" aria-hidden="true")
+                                input.form__input(name="login" placeholder="Логин")
+                            label.form__label
+                                i(class="fa fa-key form__label-icon" aria-hidden="true")
+                                input.form__input(name="password" type="password" placeholder="Пароль")
+                            .form__checkbox
+                                input.form__input-checkbox(type="checkbox" name="captcha" id="checkbox1")
+                                label.form__label-checkbox(for="checkbox1")
+                                    span.form__checkbox-text Я человек
+                            .form__radio
+                                .form__radio-title Вы точно не робот?
+                                .form__radio-block
+                                    input.form__radio-input(type="radio" name="radio-captcha" id="yes")
+                                    label.form__label-radio(for="yes")
+                                        span.form__radio-text Да
+                                    input.form__radio-input(type="radio" name="radio-captcha" id="no")
+                                    label.form__label-radio(for="no")
+                                        span.form__radio-text Не уверен
+                        +nav('nav', ["На главную", "Войти"], ["#","#"])
 
 block footer
     .footer__content

@@ -2,9 +2,9 @@ $white: #fff;
 
 
 // misc
+@import '_misc/mixins.scss';
 @import '_misc/adjustment.scss';
 @import '_misc/_common.scss';
-@import '_misc/mixins.scss';
 @import '_misc/fonts.scss';
 @import '_misc/font-awesome.scss';
 
@@ -12,6 +12,7 @@ $white: #fff;
 
 @import 'sections/header.scss';
 @import 'sections/footer.scss';
+@import 'sections/flip.scss';
 
 // pages
 @import 'pages/welcome.scss';

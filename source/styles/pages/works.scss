@@ -1,3 +1,15 @@
+.wrapper__works {
+  .triangle {
+    fill: #f8f9f5;
+  }
+  @include tablets {
+    .triangle {
+       top: 10px;
+    }
+  }
+}
+
+
 .works__title {
   background-color: #f8f9f5;
 }
@@ -9,11 +21,25 @@
   background: url(../img/icons/works.png) no-repeat;
   background-position: 70px 5px;
   max-width: 500px;
+  @include phones {
+    font-size: 35px;
+    max-width: 100%;
+    background-size: contain;
+    background-position: 12px -9px;
+    padding: 40px;
+  }
+  @include mini-phones {
+    font-size: 35px;
+    max-width: 100%;
+    background-size: contain;
+    background-position: 12px 5px;
+    padding: 40px;
+  }
 }
 
 .works__title-img {
   background: url(../img/icons/about.png) no-repeat;
-  background-position: 7px 8px;
+  background-position: 7px -10px;
   background-size: contain;
 }
 
@@ -21,6 +47,12 @@
   position: relative;
   background-color: #ebefe2;
   padding: 50px 50px 0 50px;
+  @include phones {
+    padding: 0;
+  }
+  @include mini-phones {
+    padding: 0;
+  }
 }
 
 .slider__item {
@@ -30,9 +62,27 @@
 .slider__left {
   float:left;
   width: 50%;
+  @include tablets {
+    display:table-footer-group;
+    max-width: 100%;
+    float: none;
+  }
 }
 .slider__left-img {
   padding: 50px 50px 0 50px;
+  @include tablets {
+    padding: 100px 50px 0 50px;
+  }
+  @include phones {
+    width: 400px;
+    height: 450px;
+    padding: 85px 0 0px 42px;
+  }
+  @include mini-phones {
+    width: 260px;
+    height: 361px;
+    padding: 85px 0 0 0;
+  }
 }
 
 .slider__right {
@@ -41,12 +91,26 @@
   width: 50%;
   padding:50px;
   height: 100%;
+  @include tablets {
+    display:table-header-group;
+    width: 100%;
+    float: none;
+  }
 }
 
 .slider__right-content {
   @include inlineblock(middle);
   margin-top: 190px;
   position: relative;
+  @include tablets {
+    margin-top: 0;
+  }
+  @include phones {
+    margin: 30px 0 0 40px
+  }
+  @include mini-phones {
+    margin: 26px 0;
+  }
 }
 
 .slider-title {
@@ -57,11 +121,22 @@
   &:after {
     margin: 30px -1px;
   }
+  @include tablets {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+    &:after {
+      margin: auto;
+    }
+  }
 }
 
 .slider__right-list {
   text-align: left;
   margin-bottom: 50px;
+  @include tablets {
+    text-align: center;
+  }
 
 }
 
@@ -84,7 +159,15 @@
   background-color: #6c9c5a;
   border: none;
   cursor: pointer;
-
+  @include tablets {
+    left: 29%;
+  }
+  @include phones {
+    left: 16%;
+  }
+  @include mini-phones{
+    left: 16%;
+  }
   &:hover {
     background-color: #538241;
     transion: 0.2s;
@@ -103,28 +186,19 @@
   vercal-align: middle;
 }
 
-.slider__arrows-left {
-  position: absolute;
-  left: 0;
-  padding: 20px;
-  bottom: 50%;
-  top: 50%;
-}
-
-.slider__arrows-right {
-  position: absolute;
-  right: 0;
-  padding: 20px;
-  bottom: 50%;
-  top: 50%;
-}
-
 .slider__dots {
   position: absolute;
   bottom: 0;
   left: 5%;
   width: 100%;
   margin-bottom: 30px;
+}
+.slider__arrows-left {
+  left: 0;
+}
+
+.slider__arrows-right {
+  right: 0;
 }
 
 .slider__dots-item {
@@ -152,6 +226,15 @@
   background-size: cover;
   background-position-y: 200px;
   height: 1200px;
+  padding-bottom: 300px;
+  @include phones {
+    height:100%;
+    padding-bottom: 500px;
+  }
+  @include mini-phones {
+    height:100%;
+    padding-bottom: 500px;
+  }
 }
 
 .works__quote {
@@ -163,6 +246,18 @@
 .quot__item {
   @include inlineblock(middle);
   width: 380px;
+  @include phones {
+    display: block;
+    vertical-align: baseline;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @include mini-phones {
+    display: block;
+    vertical-align: baseline;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .quote__foto {
   margin: auto;
@@ -181,8 +276,19 @@
 
 .quote__name-text {
   display: block;
-  color: #85837e;
+  color: #4e8839;
   font-family: 'robotobold_italic';
+}
+
+.quote__name {
+  @include phones {
+    text-align: right;
+    margin-right: 62px;
+  }
+  @include mini-phones {
+    text-align: right;
+    margin-right: 62px;
+  }
 }
 
 .quote__name-fonts {
@@ -197,6 +303,9 @@
   background-color: rgba(235, 235, 232, 0.7);
   border-radius: 7px;
   margin-bottom: 60px;
+  @include mini-phones {
+    width: 100%;
+  }
 }
 
 .feedback__input {
@@ -251,10 +360,6 @@
   border-radius: 0 0 7px 0;
 }
 
-.arrow__up {
-  bottom: 0;
-
-}
 
 .triangle {
   position: relative;

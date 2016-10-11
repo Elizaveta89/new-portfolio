@@ -11,10 +11,8 @@ block body
         .maincontent
 
             block header__about
-            include ../sections/header.pug
-                svg(class="triangle-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none")
-                    polygon(class="triangle__about-left" points="0,0   0,86   500.8,86   500.8,75.5")
-                    polygon(class="triangle__about-right" points="1000,00   1000,86   500,86   500,75.5")
+                include ../sections/header.pug
+
             block content
                 .content__about
                     .about__left
@@ -51,7 +49,7 @@ block body
                                             .skills__circle
                                                 img.skills__circle-pic(src="./assets/img/icons/circle.png")
                                                 span.skills__circle-text.skills__circle-js JavaScript&Jquery
-                                    .skills__block
+                                .skills__block
                                     .skills__title Backend
                                     ul.skills__list
                                         li.skills__item

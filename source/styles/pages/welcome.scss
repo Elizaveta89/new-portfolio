@@ -17,6 +17,10 @@ body {
   right: 20px;
   top: 20px;
   text-align: center;
+  @include mini-phones {
+    right: 24%;
+    top:27%;
+  }
 }
 
 .authorization__link {
@@ -32,10 +36,9 @@ body {
     transition: 0.2s;
   }
 }
-
-.welcome {
+.content__welcome {
   width: 370px;
-  background: rgba(31,53,44,.5);
+  background: rgba(22, 41, 36, 0.6);
   padding-top: 30px;
   position: absolute;
   top: 50%;
@@ -75,8 +78,18 @@ body {
 }
 
 .socials {
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 40px;
+  padding: 30px 20px 0 20px;
+  @include mini-phones {
+    margin-bottom: 20px;
+    padding: 17px 0 0 0;
+  }
+}
+
+.socials__list {
+  @include mini-phones {
+    text-align: center;
+  }
 }
 
 .socials__item {

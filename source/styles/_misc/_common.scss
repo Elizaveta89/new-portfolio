@@ -34,12 +34,28 @@
   margin: auto;
   line-height: 1.5;
   padding-top: 10px;
+  @include tablets {
+    font-size: 30px;
+  }
+  @include phones {
+    font-size: 21px;
+  }
 
   &:after {
     content:"";
     display: block;
     width: 95px;
-    margin: 20px auto;
+    margin: 10px auto;
     border: 1px solid #566358;;
 }
+}
+
+.arrows__works {
+  position: absolute;
+  padding: 20px;
+  bottom: 50%;
+  top: 50%;
+  @include phones  {
+    padding: 0;
+  }
 }

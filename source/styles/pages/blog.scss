@@ -1,7 +1,13 @@
 .header__blog {
   background-position: 0px -88px;
-}
 
+  @include laptop {
+    background-position: 0px -52px;
+  }
+  @include  tablets {
+    background-position: 0px 0px;
+  }
+}
 
 .header__blog-up {
   @extend %clearfix;
@@ -25,9 +31,22 @@
 
 .user__blog-img {
   position: absolute;
-  left: 39%;
+  left: 42%;
   top: 40%;
   opacity: 0.2;
+
+  @include laptop {
+    left: 38%;
+  }
+  @include  tablets {
+    left: 31%;
+  }
+  @include phones {
+    left: 19%;
+  }
+  @include mini-phones {
+    left: 5%;
+  }
 }
 
 .user__blog-pic {
@@ -45,18 +64,27 @@
 
 .triangle__blog {
   fill: #faf8f0;
+  @include laptop {
+    top: 8px;
+  }
+  @include tablets{
+    top: 8px;
+  }
 }
 
 .blog__content {
   @extend %clearfix;
   background-color: #faf8f0;
-  padding: 30px 10px 60px;
+  padding: 30px 10px 150px;
 }
 
 .blog__nav {
   float: left;
   width: 25%;
   padding-top: 30px;
+  @include tablets {
+    display: none;
+  }
 }
 
 .blog__nav-item {
@@ -90,13 +118,33 @@
   width: 70%;
   padding: 30px;
   text-align: left;
+  @include laptop {
+    padding: 25px;
+  }
+  @include tablets {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 85px;
+  }
+  @include phones {
+    margin-bottom: 150px;
+  }
+  @include mini-phones {
+    margin-bottom: 230px;
+  }
 }
 
 .article {
   padding: 0 40px 0 80px;
   margin-bottom: 70px;
-  padding-bottom: 54px;
   border-bottom: 5px solid rgba(55,62,66,.07);
+  @include tablets {
+    padding:0 10px;
+    margin-bottom: 50px;
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
 }
 
 .article__title {

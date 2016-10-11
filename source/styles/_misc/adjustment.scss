@@ -2,6 +2,9 @@ body {
   font-family: "robotoregular";
   font-size: 16px;
   line-height: 26px;
+  @include tablets {
+    font-size: 14px;
+  }
 }
 
 html, body {
@@ -10,9 +13,9 @@ html, body {
 }
 
 .wrapper {
+  position: relative;
   min-height: 100%;
   overflow: hidden;
-  max-width: 1800px;
   margin-bottom: -50px;
 
   &:after {
@@ -52,5 +55,6 @@ h1 {
 
 footer {
   height: 50px;
+  opacity: 0.85;
 }
 

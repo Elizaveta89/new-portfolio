@@ -5,13 +5,10 @@ block title
     title Works
 
 block body
-    .wrapper
+    .wrapper.wrapper__works
         .maincontent
             block header__about
                 include ../sections/header.pug
-                    svg(class="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none")
-                        polygon(class="triangle__left" points="0,0   0,86   500.8,86   500.8,75.5")
-                        polygon(class="triangle__right" points="1000,00   1000,86   500,86   500,75.5")
             block content
                 .container
                     section.works__title
@@ -19,9 +16,9 @@ block body
                     section.slider
                         ul.slider__list
                             li.slider__item
-                                .slider__left
+                                .slider__left(id='a')
                                     img.slider__left-img(src="./assets/img/works/work-1.png")
-                                .slider__right
+                                .slider__right(id='b')
                                     .slider__right-content
                                         .slider__title
                                             .general__title.slider-title Сайт школы онлайн образования
@@ -37,10 +34,10 @@ block body
                                                 i(class="fa fa-link slider__button-fa" aria-hidden="true")
                                                 span Посмотреть сайт
                                 .slider__arrows
-                                    .slider__arrows-left
+                                    .slider__arrows-left.arrows__works
                                         a.slider__arrows-link
                                             img.slider__arrows-img(src="./assets/img/icons/portf_arrow_left.png")
-                                    .slider__arrows-right
+                                    .slider__arrows-right.arrows__works
                                         a.slider__arrows-link
                                             img.slider__arrows-img(src="./assets/img/icons/portf_arrow_right.png")
                                 .slider__dots
@@ -87,7 +84,7 @@ block body
                                 .feedback__button
                                     button.button.button__submit(type="submit") Отправить
                                     button.button.button__reset(type="reset") Очистить
-                        .arrow.arrow__up
+                        .arrow__up
                             a.arrow__link
                                 i(class="fa fa-chevron-up arrow__pic" aria-hidden="true")
 block footer
