@@ -73,6 +73,10 @@
 
 .header__about-user {
   background: url("../img/icons/portfolio.png") no-repeat;
+  background-position: 333px -41px;
+  @include laptop {
+    background-position: 0;
+  }
   @include tablets {
     background-size: contain;
   }
@@ -88,12 +92,6 @@
   font-size: 35px;
   opacity: 0.9;
 }
-
- .triangle {
-   position: relative;
-   top: 4px;
-   fill: #f8f9f5;
- }
 
 
 

@@ -1,6 +1,7 @@
 .wrapper__works {
   .triangle {
     fill: #f8f9f5;
+    top: 8px;
   }
   @include tablets {
     .triangle {
@@ -10,11 +11,11 @@
 }
 
 
-.works__title {
+.works {
   background-color: #f8f9f5;
 }
 
-.works__title-color {
+.works__title {
   color: #373e42;
   font-size: 63px;
   padding: 60px;
@@ -170,7 +171,7 @@
   }
   &:hover {
     background-color: #538241;
-    transion: 0.2s;
+    transition: 0.2s;
   }
 }
 
@@ -240,7 +241,7 @@
 .works__quote {
   max-width: 800px;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 .quot__item {

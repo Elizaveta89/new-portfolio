@@ -6,10 +6,8 @@
   .triangle__right {
     fill: #f4f5f0;
   }
-  @include laptop {
-    .triangle {
-      top: 8px;
-    }
+  .triangle {
+    top: 8px;
   }
   @include tablets {
     .triangle {

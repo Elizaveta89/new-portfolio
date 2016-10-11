@@ -63,10 +63,9 @@
 }
 
 .triangle__blog {
+  position: relative;
   fill: #faf8f0;
-  @include laptop {
-    top: 8px;
-  }
+  top: 8px;
   @include tablets{
     top: 8px;
   }
