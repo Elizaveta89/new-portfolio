@@ -24,11 +24,15 @@
 }
 
 .header__menu-button_active {
+  position: absolute;
+  margin: 20px 20px;
+  right: 18px;
+  top: 20px;
+  width: 40px;
+  height: 35px;
   background-image: url(../img/sprite.png);
   background-position: -1746px -500px;
   cursor: pointer;
-  z-index: 1000;
-  opacity: 1;
 }
 
 .header__menu {
@@ -58,7 +62,7 @@
       margin: auto;
       display: block;
       margin-top: 20px;
-      transition: 2s;
+      transition: 1s;
     }
   }
 }
@@ -91,6 +95,10 @@
   color: #c4d5cc;
   font-size: 35px;
   opacity: 0.9;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 

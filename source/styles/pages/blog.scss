@@ -77,6 +77,11 @@
   padding: 30px 10px 150px;
 }
 
+.blog__nav-fixed {
+  position: fixed;
+  top: 0;
+}
+
 .blog__nav {
   float: left;
   width: 25%;
@@ -102,9 +107,9 @@
   border-right: 3px solid transparent;
 }
 
-.blog__nav-item_active {
-  border-right: 3px solid #6c9c5a;
+.blog__nav-link-active {
   color: #4e8839;
+  border-right: 3px solid #6c9c5a;
   font-family: $font-bold;
 }
 

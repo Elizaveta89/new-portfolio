@@ -12,7 +12,7 @@ block body
             block content
                 .container
                     section.works
-                        .general__title.works__title МОИ РАБОТЫ
+                        .general__title.works__title Мои работы
                     section.slider
                         ul.slider__list
                             li.slider__item
@@ -24,11 +24,11 @@ block body
                                             .general__title.slider-title Сайт школы онлайн образования
                                         ul.slider__right-list
                                             li.slider__right-item
-                                                span.slider__right-text HTML,
+                                                span.slider__right-text Html,
                                             li.slider__right-item
-                                                span.slider__right-text CSS,
+                                                span.slider__right-text Css,
                                             li.slider__right-item
-                                                span.slider__right-text JAVASCRIPT
+                                                span.slider__right-text Javascript
                                         button.slider__button
                                             a.slider__button-link
                                                 i(class="fa fa-link slider__button-fa" aria-hidden="true")
@@ -62,7 +62,7 @@ block body
                                         span Эта девушка проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                                     .quot__name
                                         span.quote__name-text Ковальчук Дмитрий
-                                        span.quote__name-fonts - основатель Loftschool
+                                        span.quote__name-fonts  - основатель Loftschool
                                 li.quot__item
                                     .quote__foto
                                         img.quot__foto-img(src="./assets/img/avatar/foto-zar.jpg" alt="Зар Захаров")
@@ -74,18 +74,18 @@ block body
                         .works__feedback
                             .feedback__title
                                 .general__title Связаться со мной
-                            .feedback__form
+                            form.feedback__form
                                 label.feedback__label
-                                    input.feedback__input(name="name" type="name" placeholder="Имя" required)
+                                    input.feedback__input(name="name" id="feedbackName" type="name" placeholder="Имя" required)
                                 label.feedback__label
-                                    input.feedback__input(name="mail" type="email" placeholder="Email" required)
+                                    input.feedback__input(name="mail" id='feedbackEmail' type="email" placeholder="Email" required)
                                 label.feedback__label
-                                    textarea.feedback__textarea(name="textarea" type="text" placeholder="Ваше сообщение" required)
+                                    textarea.feedback__textarea(name="textarea" id='feedbackTextarea' type="text" placeholder="Ваше сообщение" required)
                                 .feedback__button
                                     button.button.button__submit(type="submit") Отправить
                                     button.button.button__reset(type="reset") Очистить
                         .arrow__up
-                            a.arrow__link
+                            a.arrow__link.arrow__pic-up(href="#")
                                 i(class="fa fa-chevron-up arrow__pic" aria-hidden="true")
 block footer
     include ../sections/footer.pug

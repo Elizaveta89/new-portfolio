@@ -24,7 +24,7 @@ body {
 }
 
 .authorization__link {
-  border: 2px solid $white;
+  border: 1px solid $white;
   padding: 8px 15px;
   border-radius: 25px;
   color: #fff;
@@ -94,7 +94,7 @@ body {
 
 .socials__item {
   @include inlineblock(middle);
-  margin-left: 20px;
+  margin-left: 30px;
 
   &:first-child {
     margin-left: 0;
@@ -103,7 +103,7 @@ body {
 
 .socials__link {
   color: #ffffff;
-  font-size: 35px;
+  font-size: 27px;
   cursor: pointer;
 
   &:hover {
@@ -131,7 +131,7 @@ body {
 }
 
 .nav__link {
-  padding: 14px;
+  padding: 10px;
   text-decoration: none;
   display: block;
   background-color: #618f54;

@@ -20,12 +20,13 @@
             <div class="socials socials_position">
               <ul class="socials__list">
                 <li class="socials__item"><a class="socials__link socials__link-header" href="https://vk.com/id272177" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                <li class="socials__item"><a class="socials__link socials__link-header" href="https://github.com/Elizaveta89" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li class="socials__item"><a class="socials__link socials__link-header" href="https://github.com/Elizaveta89" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
                 <li class="socials__item"><a class="socials__link socials__link-header" href="https://ru.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
               </ul>
             </div>
             <div class="header__menu-button"></div>
             <nav class="header__menu">
+              <div class="header__menu-button_active"></div>
               <ul class="header__menu-list">
                 <li class="header__menu-item"><a class="header__menu-link" href="http://ovinovaportfolio.ru/works.html"><span class="header__menu-text">Мои работы</span></a></li>
                 <li class="header__menu-item"><a class="header__menu-link" http://ovinovaportfolio.ru/about.html><span class="header__menu-text">Обо мне</span></a></li>
@@ -47,7 +48,7 @@
               </div>
             </div>
           </div>
-          <div class="arrow"><a class="arrow__link"><i class="fa fa-chevron-down arrow__pic" aria-hidden="true"></i></a></div>
+          <div class="arrow"><a class="arrow__link arrow__pic-down" href="#"><i class="fa fa-chevron-down arrow__pic" aria-hidden="true"></i></a></div>
           <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none">
             <polygon class="triangle__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
             <polygon class="triangle__right" points="1000,00   1000,86   500,86   500,75.5"></polygon>
@@ -55,7 +56,7 @@
         </div>
         <div class="container">
           <section class="works">
-            <div class="general__title works__title">МОИ РАБОТЫ</div>
+            <div class="general__title works__title">Мои работы</div>
           </section>
           <section class="slider">
             <ul class="slider__list">
@@ -67,9 +68,9 @@
                       <div class="general__title slider-title">Сайт школы онлайн образования</div>
                     </div>
                     <ul class="slider__right-list">
-                      <li class="slider__right-item"><span class="slider__right-text">HTML,</span></li>
-                      <li class="slider__right-item"><span class="slider__right-text">CSS,</span></li>
-                      <li class="slider__right-item"><span class="slider__right-text">JAVASCRIPT</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Html,</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Css,</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Javascript</span></li>
                     </ul>
                     <button class="slider__button"><a class="slider__button-link"><i class="fa fa-link slider__button-fa" aria-hidden="true"></i><span>Посмотреть сайт</span></a></button>
                   </div>
@@ -98,7 +99,7 @@
                 <li class="quot__item">
                   <div class="quote__foto"><img class="quot__foto-img" src="./assets/img/avatar/foto-dima.jpg" alt="Дмитрий Ковальчук"></div>
                   <div class="quote__text"><span>Эта девушка проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</span></div>
-                  <div class="quot__name"><span class="quote__name-text">Ковальчук Дмитрий</span><span class="quote__name-fonts">- основатель Loftschool</span></div>
+                  <div class="quot__name"><span class="quote__name-text">Ковальчук Дмитрий</span><span class="quote__name-fonts"> - основатель Loftschool</span></div>
                 </li>
                 <li class="quot__item">
                   <div class="quote__foto"><img class="quot__foto-img" src="./assets/img/avatar/foto-zar.jpg" alt="Зар Захаров"></div>
@@ -111,23 +112,23 @@
               <div class="feedback__title">
                 <div class="general__title">Связаться со мной</div>
               </div>
-              <div class="feedback__form">
+              <form class="feedback__form">
                 <label class="feedback__label">
-                  <input class="feedback__input" name="name" type="name" placeholder="Имя" required>
+                  <input class="feedback__input" name="name" id="feedbackName" type="name" placeholder="Имя" required>
                 </label>
                 <label class="feedback__label">
-                  <input class="feedback__input" name="mail" type="email" placeholder="Email" required>
+                  <input class="feedback__input" name="mail" id="feedbackEmail" type="email" placeholder="Email" required>
                 </label>
                 <label class="feedback__label">
-                  <textarea class="feedback__textarea" name="textarea" type="text" placeholder="Ваше сообщение" required></textarea>
+                  <textarea class="feedback__textarea" name="textarea" id="feedbackTextarea" type="text" placeholder="Ваше сообщение" required></textarea>
                 </label>
                 <div class="feedback__button">
                   <button class="button button__submit" type="submit">Отправить</button>
                   <button class="button button__reset" type="reset">Очистить</button>
                 </div>
-              </div>
+              </form>
             </div>
-            <div class="arrow__up"><a class="arrow__link"><i class="fa fa-chevron-up arrow__pic" aria-hidden="true"></i></a></div>
+            <div class="arrow__up"><a class="arrow__link arrow__pic-up" href="#"><i class="fa fa-chevron-up arrow__pic" aria-hidden="true"></i></a></div>
           </section>
         </div>
       </div>
@@ -151,7 +152,7 @@
               <div class="socials__footer socials">
                 <ul class="socials__list">
                   <li class="socials__item"><a class="socials__link socials__link-footer" href="https://vk.com/id272177" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                  <li class="socials__item"><a class="socials__link socials__link-footer" href="https://github.com/Elizaveta89" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                  <li class="socials__item"><a class="socials__link socials__link-footer" href="https://github.com/Elizaveta89" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
                   <li class="socials__item"><a class="socials__link socials__link-footer" href="https://ru.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 </ul>
               </div>

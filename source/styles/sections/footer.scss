@@ -1,5 +1,5 @@
 .footer__about {
-  margin-top: -240px;
+  margin-top: -234px;
   @include tablets {
     margin-top: -308px;
   }
@@ -163,7 +163,8 @@
 }
 
 .footer__quote-author {
-  font-family: $font-bold;
+  font-family: 'robotobold_italic';
+  opacity: 0.6;
 }
 
 .footer__menu-down {
