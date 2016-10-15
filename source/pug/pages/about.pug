@@ -7,6 +7,18 @@ block title
     title About
 
 block body
+    .preloader
+        .preloader__content
+            .preloader__pic
+                svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve")
+                g
+                    path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005")
+                g
+                    path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684")
+                g
+                    path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362")
+            span.preloader__value(data-unit='%', id='preloaderCounter') 100
     .wrapper.wrapper__about
         .maincontent
 
@@ -38,51 +50,61 @@ block body
                                     .skills__title Frontend
                                     ul.skills__list
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text Html
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green(r="16" cx="16" cy="16" stroke-dasharray="90 100")
+                                                .skills__circle-text Html5
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text Css3
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green(r="16" cx="16" cy="16" stroke-dasharray="80 100")
+                                                .skills__circle-text Css3
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text.skills__circle-js JavaScript&Jquery
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green(r="16" cx="16" cy="16" stroke-dasharray="80 100")
+                                                .skills__circle-text JavaScript & Jquery
                                 .skills__block
                                     .skills__title Backend
                                     ul.skills__list
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text Php
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green.skills__circle-php(r="16" cx="16" cy="16" stroke-dasharray="40 100")
+                                                .skills__circle-text Php
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text mySQL
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green.skills__circle-mySQL(r="16" cx="16" cy="16" stroke-dasharray="55 100")
+                                                .skills__circle-text mySQL
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text Node.js & npm
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green.skills__circle-php(r="16" cx="16" cy="16" stroke-dasharray="30 100")
+                                                .skills__circle-text Node.js & npm
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text Mongo.db
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green.skills__circle-Mongo(r="16" cx="16" cy="16" stroke-dasharray="60 100")
+                                                .skills__circle-text Mongo.db
                                 .skills__block
                                     .skills__title WorkFlow
                                     ul.skills__list
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text Git
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green(r="16" cx="16" cy="16" stroke-dasharray="85 100")
+                                                .skills__circle-text Git
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text Gulp
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green.skills__circle-Gulp(r="16" cx="16" cy="16" stroke-dasharray="65 100")
+                                                .skills__circle-text Gulp
                                         li.skills__item
-                                            .skills__circle
-                                                img.skills__circle-pic(src="./assets/img/icons/circle.png")
-                                                span.skills__circle-text Bower
+                                            svg(viewBox="0 0 32 32")
+                                                circle.skills__circle-grey(r="16" cx="16" cy="16")
+                                                circle.skills__circle-green.skills__circle-Mongo(r="16" cx="16" cy="16" stroke-dasharray="55 100")
+                                                .skills__circle-text Bower
                 .contacts__map
                     .contacts__window
                         .general__title

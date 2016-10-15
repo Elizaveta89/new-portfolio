@@ -20,6 +20,7 @@
 }
 
 .content__about {
+  display: flex;
   @extend %clearfix;
 }
 
@@ -28,9 +29,7 @@
   width: 50%;
   background-color: #ebefe2;
   position: relative;
-  padding-bottom: 133px;
   @include laptop {
-    padding-bottom: 75px;
   }
   @include tablets {
     float: none;
@@ -107,7 +106,6 @@
 .about__text {
   color: #566358;
   text-align: left;
-  margin-bottom: 30px;
   max-width: 420px;
   margin: auto;
   line-height: 1.8;
@@ -121,6 +119,7 @@
   float: right;
   width: 50%;
   background-color: #f4f5f0;
+  box-sizing: border-box;
   @extend %clearfix;
   @include tablets {
     float: none;
@@ -183,25 +182,60 @@
 
 .skills__item{
   display: inline-block;
-  padding: 15px;
+  text-align: center;
+  margin-right: 15px;
   position: relative;
-  width: 110px;
-  height: 110px;
-  @include laptop {
-    padding:10px;
+  svg {
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+    background: transparent;
+    border-radius: 50%;
   }
+  @include laptop {
+    margin-right: 10px;
+  }
+}
+
+.skills__circle-grey {
+  fill: transparent;
+  stroke: #dfdcd5;
+  stroke-width: 10;
+  stroke-dasharray: 101 100;
+}
+
+.skills__circle-green {
+  fill: transparent;
+  stroke: #6c9c5a;
+  stroke-width: 10;
+}
+
+.skills__circle-php {
+  stroke-opacity: 0.4;
+}
+
+.skills__circle-mySQL {
+  stroke-opacity: 0.5;
+}
+
+.skills__circle-Mongo {
+  stroke-opacity: 0.6;
+}
+
+.skills__circle-Gulp {
+  stroke-opacity: 0.8;
 }
 
 .skills__circle-text {
   position: absolute;
-  left: 40%;
-  bottom: 42%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   color: #649751;
-}
-
-.skills__circle-js {
-  left: 29%;
-  max-width: 60px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.0;
 }
 
 .contacts__map {

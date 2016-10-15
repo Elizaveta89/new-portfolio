@@ -9,10 +9,10 @@ $white: #fff;
 @import '_misc/font-awesome.scss';
 
 //sections
-
+@import 'sections/preloader.scss';
 @import 'sections/header.scss';
 @import 'sections/footer.scss';
-@import 'sections/flip.scss';
+
 
 // pages
 @import 'pages/welcome.scss';

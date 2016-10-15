@@ -1,5 +1,5 @@
 .authorization__menu {
-  display: none;
+  transform: rotateY(180deg);
 }
 
 .authorization__title {
@@ -11,6 +11,7 @@
   
   &:after {
     border-color: $white;
+    margin: 20px auto;
   }
 }
 

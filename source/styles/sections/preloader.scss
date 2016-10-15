@@ -1,0 +1,23 @@
+.preloader {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-img: url('../img/preloader/forest_prel_bg.jpg');
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.preloader__content {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+

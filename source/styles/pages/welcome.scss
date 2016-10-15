@@ -36,14 +36,40 @@ body {
     transition: 0.2s;
   }
 }
+
+.authorization__link-none {
+  display: none;
+}
+
 .content__welcome {
   width: 370px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transform-style: preserve-3d;
+  transition: transform .6s;
+}
+
+.welcome, .authorization__menu {
+  display: block;
+  width: 100%;
+  position: absolute;
   background: rgba(22, 41, 36, 0.6);
   padding-top: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transition: opacity .5s;
+  overflow: hidden;
+}
+
+.welcome {
+  transform: rotateY(0deg);
+}
+
+.welcome__back{
+  backface-visibility: hidden;
+}
+
+.welcome__flip {
+  transform: rotateY(180deg);
 }
 
 .user {

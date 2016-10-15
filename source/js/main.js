@@ -7,7 +7,7 @@ $(function () {
     var menu = $('.header__menu');
     var menuActiveClass = 'header__menu-active';
 
-    button.on ('click', function() {
+    button.on('click', function () {
         if (menu.hasClass(menuActiveClass)) {
             menu.removeClass(menuActiveClass);
         } else {
@@ -16,14 +16,14 @@ $(function () {
         }
     });
 
-    buttonActiveClass.on('click', function(){
-            menu.removeClass(menuActiveClass);
-            button.show();
+    buttonActiveClass.on('click', function () {
+        menu.removeClass(menuActiveClass);
+        button.show();
     })
 
     //tabs
 
-    $('.blog__nav-item').on('click', function() {
+    $('.blog__nav-item').on('click', function () {
         var index = $(this).index();
         $('.blog__nav-link').removeClass('blog__nav-link-active');
         $(this).find('.blog__nav-link').addClass('blog__nav-link-active');
@@ -31,9 +31,9 @@ $(function () {
         $('body,html').animate({scrollTop: article.offset().top}, 500);
     })
 
-    $(function(){
+    $(function () {
         var navTopPos = $('.blog__nav').offset().top;
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             var top = $(document).scrollTop();
             if (top > navTopPos) $('.blog__nav').addClass('blog__nav-fixed');
             else $('.blog__nav').removeClass('blog__nav-fixed');
@@ -42,20 +42,20 @@ $(function () {
 
     // arrow_up
 
-    $(".arrow__pic-up").click(function(){
-        $('body').animate({"scrollTop":0}, 1000);
+    $(".arrow__pic-up").click(function () {
+        $('body').animate({"scrollTop": 0}, 1000);
     });
 
     //arrow_down
 
-    $(".arrow__pic-down").click(function(){
-        var height=$(".wrapper").height();
-        $("body").animate({"scrollTop":height}, 1000);
+    $(".arrow__pic-down").click(function () {
+        var height = $(".wrapper").height();
+        $("body").animate({"scrollTop": height}, 1000);
     });
 
     // form
 
-    var feedbackInputs = ['#feedbackName','#feedbackEmail','#feedbackTextarea'];
+    var feedbackInputs = ['#feedbackName', '#feedbackEmail', '#feedbackTextarea'];
 
     function addListeners(inputSelector) {
         $(inputSelector).on('input', function () {
@@ -79,7 +79,7 @@ $(function () {
         }
     }
 
-    $('.button__submit').on('click', function() {
+    $('.button__submit').on('click', function () {
         feedbackInputs.forEach(function (item) {
             checkInput(item);
         })
@@ -90,5 +90,32 @@ $(function () {
             resetError(item);
         })
     })
+
+    // flipper
+
+    var welcomeContent = $('.content__welcome');
+    var authBtn = $('.authorization');
+
+    function flip() {
+        if (welcomeContent.hasClass('welcome__flip')) {
+            welcomeContent.removeClass('welcome__flip');
+            $('.authorization__menu').addClass('welcome__back');
+            authBtn.removeClass('authorization__link-none');
+        } else {
+            welcomeContent.addClass('welcome__flip');
+            $('.welcome').addClass('welcome__back');
+            authBtn.addClass('authorization__link-none');
+        }
+    }
+
+    authBtn.on('click', function () {
+        flip();
+    })
+
+    // preloader
+
+
+
+
 
 });
