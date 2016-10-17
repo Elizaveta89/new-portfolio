@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./assets/css/foundation.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <script src="./assets/js/foundation.js" defer></script>
-    <script src="./assets/js/main.js" defer></script><!--[if lt IE 9]>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjGzi0FeYTz939CU4XEUrU5iffafIgQSI&amp;callback=initMap" async defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
     <title>Works</title>
   </head>
@@ -17,7 +18,7 @@
       <div class="maincontent">
         <div class="header__about">
           <div class="header__about-up">
-            <div class="socials socials_position">
+            <div class="socials socials__position">
               <ul class="socials__list">
                 <li class="socials__item"><a class="socials__link socials__link-header" href="https://vk.com/id272177" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                 <li class="socials__item"><a class="socials__link socials__link-header" href="https://github.com/Elizaveta89" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
@@ -39,9 +40,7 @@
             <div class="user user__about">
               <div class="user__foto"><img class="user__foto-img" src="./assets/img/avatar/me.jpg" alt="Аватар"></div>
               <div class="user__info">
-                <div class="user__info-name">
-                  <h1>Елизавета Овинова</h1>
-                </div>
+                <div class="user__info-name">Елизавета Овинова</div>
                 <div class="user__info-text">
                   <p>Личный сайт веб разработчика</p>
                 </div>
@@ -88,39 +87,11 @@
                   </ul>
                 </div>
               </li>
-              <li class="slider__item">
-                <div class="slider__left" id="a"><img class="slider__left-img" src="./assets/img/works/work-1.png"></div>
-                <div class="slider__right" id="b">
-                  <div class="slider__right-content">
-                    <div class="slider__title">
-                      <div class="general__title slider-title">Сайт школы онлайн образования</div>
-                    </div>
-                    <ul class="slider__right-list">
-                      <li class="slider__right-item"><span class="slider__right-text">Html,</span></li>
-                      <li class="slider__right-item"><span class="slider__right-text">Css,</span></li>
-                      <li class="slider__right-item"><span class="slider__right-text">Javascript</span></li>
-                    </ul>
-                    <button class="slider__button"><a class="slider__button-link"><i class="fa fa-link slider__button-fa" aria-hidden="true"></i><span>Посмотреть сайт</span></a></button>
-                  </div>
-                </div>
-                <div class="slider__arrows">
-                  <div class="slider__arrows-left arrows__works"><a class="slider__arrows-link"><img class="slider__arrows-img" src="./assets/img/icons/portf_arrow_left.png"></a></div>
-                  <div class="slider__arrows-right arrows__works"><a class="slider__arrows-link"><img class="slider__arrows-img" src="./assets/img/icons/portf_arrow_right.png"></a></div>
-                </div>
-                <div class="slider__dots">
-                  <ul class="slider__dots-list">
-                    <li class="slider__dots-item"><a class="slider__dots-link"></a></li>
-                    <li class="slider__dots-item"><a class="slider__dots-link"></a></li>
-                    <li class="slider__dots-item"><a class="slider__dots-link"></a></li>
-                    <li class="slider__dots-item"><a class="slider__dots-link"></a></li>
-                  </ul>
-                </div>
-              </li>
             </ul>
           </section>
           <section class="works__bottom">
             <div class="works__bottom-title">
-              <div class="general__title works__title-img works__title">Что обо мне говорят</div>
+              <div class="general__title works__bottom-title-after works__title">Что обо мне говорят</div>
             </div>
             <div class="works__quote">
               <ul class="quote__list">
@@ -138,7 +109,7 @@
             </div>
             <div class="works__feedback">
               <div class="feedback__title">
-                <div class="general__title">Связаться со мной</div>
+                <div class="general__title feedback__title-after">Связаться со мной</div>
               </div>
               <form class="feedback__form">
                 <label class="feedback__label">

@@ -1,5 +1,5 @@
 .footer__about {
-  margin-top: -234px;
+  margin-top: -210px;
   @include tablets {
     margin-top: -308px;
   }
@@ -14,7 +14,7 @@
 .footer__menu-up {
   background: rgba(28,31,41,.85);
   width: 100%;
-  padding-top: 30px;
+  padding-top: 17px;
 }
 
 .footer__menu-left {
@@ -86,7 +86,7 @@
 }
 
 .footer__nav {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   @include tablets {
     margin-bottom: 10px;
   }
@@ -94,7 +94,7 @@
 
 .footer__nav-item {
   @include inlineblock(middle);
-  margin-left: 40px;
+  margin-left: 16px;
   @include laptop {
     margin-left: 18px;
   }

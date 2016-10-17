@@ -16,12 +16,16 @@
 }
 
 .works__title {
+  background: url(../img/icons/works.png) no-repeat;
+  background-position: 50% -2px;
   color: #373e42;
   font-size: 63px;
-  background: url(../img/icons/works.png) no-repeat;
-  background-position: 70px 5px;
   max-width: 500px;
-  padding: 60px;
+  padding-bottom: 15px;
+  padding-top: 60px;
+  &:after {
+    margin: 22px auto;
+  }
   @include phones {
     font-size: 35px;
     max-width: 100%;
@@ -36,13 +40,6 @@
     background-position: 12px 5px;
     padding: 40px;
   }
-}
-
-.works__title-img {
-  background: url(../img/icons/about.png) no-repeat;
-  background-position: 7px -10px;
-  background-size: contain;
-  padding: 0;
 }
 
 .slider {
@@ -241,18 +238,28 @@
 }
 
 .works__bottom-title {
-  margin-top: 50px;
+  padding-top: 50px;
+  background: url(../img/icons/about.png) no-repeat;
+  background-position: 50% 50%;
+  background-size: 40%;
+}
+
+.works__bottom-title-after {
+  padding-bottom: 0;
+  &:after {
+    margin: 30px auto;
+  }
 }
 
 .works__quote {
   max-width: 900px;
   margin: auto;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 
 .quot__item {
   @include inlineblock(middle);
-  width: 408px;
+  width: 385px;
   @include phones {
     display: block;
     vertical-align: baseline;
@@ -278,13 +285,13 @@
   font-family: 'robotoitalic';
   color: #a3a29d;
   text-align: left;
-  margin: 20px 20px 0 20px;
+  margin: 14px 0;
 }
 
 .quote__name-text {
   display: block;
   color: #4e8839;
-  font-family: 'robotobold_italic';
+  font-family: 'robotoitalic';
 }
 
 .quote__name {
@@ -320,27 +327,36 @@
   padding-top: 20px;
 }
 
+.feedback__title-after {
+  &:after {
+    margin: 23px auto;
+    margin-bottom: 20px;
+  }
+}
+
 .feedback__label {
+  padding-top: 13px;
   opacity: 0.7;
   display: block;
 }
 
 .feedback__input {
   box-sizing: border-box;
-  height: 40px;
+  height: 43px;
   border: 0;
   line-height: 40px;
   padding: 0 20px;
   width: 90%;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   border-radius: 20px;
   outline: none;
 }
 
 .feedback__textarea {
   @extend .feedback__input;
+  margin-bottom: 14px;
   height: 140px;
-  padding: 10px 20px;
+  padding: 4px 20px;
   width: 90%;
 }
 

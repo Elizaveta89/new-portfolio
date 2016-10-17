@@ -9,7 +9,7 @@
   padding: 20px;
 }
 
-.socials_position {
+.socials__position {
   float: left;
 }
 
@@ -87,13 +87,27 @@
 }
 
 .user__about {
-  margin-bottom: 65px;
+  margin-bottom: 72px;
   padding: 45px;
+}
+
+.user__foto {
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 140px;
+  width: 140px;
+  margin-bottom: 30px;
+}
+
+.user__info-name {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .arrow__pic {
   color: #c4d5cc;
-  font-size: 35px;
+  font-size: 28px;
   opacity: 0.9;
   cursor: pointer;
   &:hover {

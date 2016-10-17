@@ -1,5 +1,6 @@
 .authorization__menu {
   transform: rotateY(180deg);
+  padding-top: 30px;
 }
 
 .authorization__title {
@@ -8,6 +9,7 @@
   font-size: 35px;
   color: $white;
   margin: auto;
+  padding-top: 0;
   
   &:after {
     border-color: $white;
@@ -88,7 +90,7 @@
 }
 
 .form__radio {
-  margin-bottom: 35px;
+  margin-bottom: 70px;
 }
 
 .form__radio-title {
@@ -117,6 +119,10 @@
 
 .form__radio-input:checked + .form__label-radio:before {
   background-position: -1554px -626px;
+}
+
+.nav__item-auth {
+  width: 50%;
 }
 
 

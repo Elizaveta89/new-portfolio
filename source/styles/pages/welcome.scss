@@ -25,7 +25,7 @@ body {
 
 .authorization__link {
   border: 1px solid $white;
-  padding: 8px 15px;
+  padding: 10px 20px;
   border-radius: 25px;
   color: #fff;
   font-family: "robotomedium";
@@ -42,7 +42,8 @@ body {
 }
 
 .content__welcome {
-  width: 370px;
+  height: 400px;
+  width: 380px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -55,7 +56,7 @@ body {
   width: 100%;
   position: absolute;
   background: rgba(22, 41, 36, 0.6);
-  padding-top: 30px;
+  padding-top: 41px;
   transition: opacity .5s;
   overflow: hidden;
 }
@@ -76,26 +77,26 @@ body {
   text-align: center;
 }
 
-.user__foto {
+.user__foto-welcome {
   margin: 0 auto;
   border-radius: 50%;
   overflow: hidden;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 140px;
   margin-bottom: 15px;
 }
 
 .user__foto-img {
   display: block;
-  height: 150px;
+  height: 140px;
 }
 
 .user__info {
   color: $white;
 }
 
-.user__info-name {
-  font-size: 14px;
+.user__info-name_welcome {
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
@@ -105,11 +106,14 @@ body {
 
 .socials {
   margin-bottom: 40px;
-  padding: 30px 20px 0 20px;
+  padding: 30px 20px 0 22px;
   @include mini-phones {
     margin-bottom: 20px;
     padding: 17px 0 0 0;
   }
+}
+.socials__welcome {
+  margin-bottom: 81px;
 }
 
 .socials__list {
@@ -120,7 +124,7 @@ body {
 
 .socials__item {
   @include inlineblock(middle);
-  margin-left: 30px;
+  margin-left: 25px;
 
   &:first-child {
     margin-left: 0;
@@ -143,13 +147,18 @@ body {
 }
 
 .nav__list {
-  display: flex;
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 45px;
+  bottom: 0;
 }
 
 .nav__item {
-  @include inlineblock(middle);
   border-right: 1px solid #a0b99e;
-  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
 
   &:last-child {
     border-right:0;
@@ -157,10 +166,11 @@ body {
 }
 
 .nav__link {
-  padding: 10px;
+  padding: 10px 25px;
   text-decoration: none;
   display: block;
   background-color: #618f54;
+  transition: 0.5s;
 
   &:hover {
     background-color: #487f39;
@@ -177,6 +187,7 @@ body {
 }
 
 .footer__text {
+  padding-top: 20px;
   color: $white;
   opacity: 0.9;
 }

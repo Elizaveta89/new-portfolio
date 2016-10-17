@@ -112,10 +112,7 @@ $(function () {
         flip();
     })
 
-    // preloader
-
-
-
+    // map
 
 
 });

@@ -29,14 +29,13 @@ block body
                 .content__welcome
                     .welcome.welcome__back
                             .user
-                                .user__foto
+                                .user__foto-welcome
                                     img.user__foto-img(src='./assets/img/avatar/me.jpg' alt="Аватар")
                                 .user__info
-                                    .user__info-name
-                                        h1 Елизавета Овинова
+                                    .user__info-name_welcome Елизавета Овинова
                                     .user__info-text
                                         p Личный сайт веб разработчика
-                            .socials
+                            .socials.socials__welcome
                                 ul.socials__list
                                     li.socials__item
                                         a.socials__link.socials__link-opacity(href="https://vk.com/id272177" target="_blank")
@@ -71,8 +70,14 @@ block body
                                     input.form__radio-input(type="radio" name="radio-captcha" id="no")
                                     label.form__label-radio(for="no")
                                         span.form__radio-text Не уверен
-                        +nav('nav', ["На главную", "Войти"], ["#","#"])
-
+                            nav.nav
+                                ul.nav__list
+                                    li.nav__item.nav__item-auth
+                                        a.nav__link(href="#")
+                                            .nav__text На главную
+                                    li.nav__item.nav__item-auth
+                                        a.nav__link(href="#")
+                                            .nav__text Войти
 block footer
     .footer__content
         .footer__text  © Елизавета Овинова | создано с любовью в LoftSchool | 2016
