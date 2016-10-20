@@ -15,7 +15,7 @@ block body
                         .general__title.works__title Мои работы
                     section.slider
                         ul.slider__list
-                            li.slider__item
+                            li.slider__item.slider__item-active
                                 .slider__left(id='a')
                                     img.slider__left-img(src="./assets/img/works/work-1.png")
                                 .slider__right(id='b')
@@ -33,26 +33,72 @@ block body
                                             a.slider__button-link
                                                 i(class="fa fa-link slider__button-fa" aria-hidden="true")
                                                 span Посмотреть сайт
-                                .slider__arrows
-                                    .slider__arrows-left.arrows__works
-                                        a.slider__arrows-link
-                                            img.slider__arrows-img(src="./assets/img/icons/portf_arrow_left.png")
-                                    .slider__arrows-right.arrows__works
-                                        a.slider__arrows-link
-                                            img.slider__arrows-img(src="./assets/img/icons/portf_arrow_right.png")
-                                .slider__dots
-                                    ul.slider__dots-list
-                                        li.slider__dots-item
-                                            a.slider__dots-link
-                                        li.slider__dots-item
-                                            a.slider__dots-link
-                                        li.slider__dots-item
-                                            a.slider__dots-link
-                                        li.slider__dots-item
-                                            a.slider__dots-link
+                            li.slider__item
+                                .slider__left(id='e')
+                                    img.slider__left-img(src="./assets/img/works/work-1.png")
+                                .slider__right(id='f')
+                                    .slider__right-content
+                                        .slider__title
+                                            .general__title.slider-title Сайт школы онлайн образования
+                                        ul.slider__right-list
+                                            li.slider__right-item
+                                                span.slider__right-text Html,
+                                            li.slider__right-item
+                                                span.slider__right-text Css,
+                                            li.slider__right-item
+                                                span.slider__right-text Javascript
+                                        button.slider__button
+                                            a.slider__button-link
+                                                i(class="fa fa-link slider__button-fa" aria-hidden="true")
+                                                span Посмотреть сайт
+                            li.slider__item.slider__item-active
+                                .slider__left(id='a')
+                                    img.slider__left-img(src="./assets/img/works/work-1.png")
+                                .slider__right(id='b')
+                                    .slider__right-content
+                                        .slider__title
+                                            .general__title.slider-title Сайт школы онлайн образования
+                                        ul.slider__right-list
+                                            li.slider__right-item
+                                                span.slider__right-text Html,
+                                            li.slider__right-item
+                                                span.slider__right-text Css,
+                                            li.slider__right-item
+                                                span.slider__right-text Javascript
+                                        button.slider__button
+                                            a.slider__button-link
+                                                i(class="fa fa-link slider__button-fa" aria-hidden="true")
+                                                span Посмотреть сайт
+                            li.slider__item.slider__item-active
+                                .slider__left(id='a')
+                                    img.slider__left-img(src="./assets/img/works/work-1.png")
+                                .slider__right(id='b')
+                                    .slider__right-content
+                                        .slider__title
+                                            .general__title.slider-title Сайт школы онлайн образования
+                                        ul.slider__right-list
+                                            li.slider__right-item
+                                                span.slider__right-text Html,
+                                            li.slider__right-item
+                                                span.slider__right-text Css,
+                                            li.slider__right-item
+                                                span.slider__right-text Javascript
+                                        button.slider__button
+                                            a.slider__button-link
+                                                i(class="fa fa-link slider__button-fa" aria-hidden="true")
+                                                span Посмотреть сайт
+                        .slider__arrows
+                            .slider__arrows-left.arrows__works
+                                a.slider__arrows-link
+                                    img.slider__arrows-img(src="./assets/img/icons/portf_arrow_left.png")
+                            .slider__arrows-right.arrows__works
+                                a.slider__arrows-link
+                                    img.slider__arrows-img(src="./assets/img/icons/portf_arrow_right.png")
+                        .slider__dots
+                            ul.slider__dots-list
                     section.works__bottom
                         .works__bottom-title
-                            .general__title.works__bottom-title-after.works__title Что обо мне говорят
+                            .general__title.works__bottom-title-after Что обо мне говорят
                         .works__quote
                             ul.quote__list
                                 li.quot__item
@@ -74,13 +120,16 @@ block body
                         .works__feedback
                             .feedback__title
                                 .general__title.feedback__title-after Связаться со мной
-                            form.feedback__form
+                            form.feedback__form(novalidate)
                                 label.feedback__label
                                     input.feedback__input(name="name" id="feedbackName" type="name" placeholder="Имя" required)
+                                    .feedback__error-window Введите имя
                                 label.feedback__label
                                     input.feedback__input(name="mail" id='feedbackEmail' type="email" placeholder="Email" required)
+                                    .feedback__error-window Введите e-mail
                                 label.feedback__label
                                     textarea.feedback__textarea(name="textarea" id='feedbackTextarea' type="text" placeholder="Ваше сообщение" required)
+                                    .feedback__error-window Введите сообщение
                                 .feedback__button
                                     button.button.button__submit(type="submit") Отправить
                                     button.button.button__reset(type="reset") Очистить
@@ -89,6 +138,8 @@ block body
                                 i(class="fa fa-chevron-up arrow__pic" aria-hidden="true")
 block footer
     include ../sections/footer.pug
+block preloader
+    include ../sections/preloader.pug
 
 
 

@@ -1,5 +1,57 @@
 $(function () {
 
+    // preloader
+
+    $('.wrapper').hide();
+
+    var imgs = [];
+
+    $('*').each(function () {
+        var element, background, img;
+        element = $(this);
+        background = element.css('background-image');
+        img = element.is('img');
+
+        if (background != 'none') {
+            var path = background.replace('url("', '').replace('")', '');
+            imgs.push(path);
+        }
+
+        if (img) {
+            var path = element.attr('src');
+            if (path) {
+                imgs.push(path);
+            }
+        }
+    });
+
+    var percentsTotal = 1;
+
+    for (var i = 0; i < imgs.length; i++) {
+        var image = $('<img>', {
+            attr: {
+                src: imgs[i]
+            }
+        });
+        image.on('load', function () {
+            setPercents(imgs.length, percentsTotal);
+            percentsTotal++;
+        });
+
+        image.on('error', function () {
+            percentsTotal++;
+        })
+    }
+
+    function setPercents(total, current) {
+        var percent = Math.ceil(current / total * 100);
+        if (percent >= 100) {
+            $('.preloader').fadeOut();
+            $('.wrapper').show();
+        }
+        $('.preloader__percents').text(percent);
+    }
+
     // menu
 
     var button = $('.header__menu-button');
@@ -56,6 +108,9 @@ $(function () {
     // form
 
     var feedbackInputs = ['#feedbackName', '#feedbackEmail', '#feedbackTextarea'];
+    var authInputs = ['#authLogin', '#authPassword'];
+
+    $('.feedback__error-window').hide();
 
     function addListeners(inputSelector) {
         $(inputSelector).on('input', function () {
@@ -67,6 +122,10 @@ $(function () {
         addListeners(item);
     })
 
+    authInputs.forEach(function (i) {
+        addListeners(i);
+    })
+
     function resetError(inputSelector) {
         $(inputSelector).removeClass('feedback__error');
     }
@@ -74,18 +133,31 @@ $(function () {
     function checkInput(inputSelector) {
         if ($(inputSelector).val() == '') {
             $(inputSelector).addClass('feedback__error');
+            $(inputSelector).siblings('.feedback__error-window').show();
+            return false;
         } else {
             resetError(inputSelector);
+            $(inputSelector).siblings('.feedback__error-window').hide();
+            return true;
         }
     }
 
-    $('.button__submit').on('click', function () {
+    $('.button__submit').on('click', function (event) {
         feedbackInputs.forEach(function (item) {
-            checkInput(item);
+            if (!checkInput(item)) {
+                event.preventDefault();
+            }
         })
     });
 
+    $('.nav__link-auth').on('click', function () {
+        authInputs.forEach(function (i) {
+            checkInput(i);
+        })
+    })
+
     $('.button__reset').on('click', function () {
+        $('.feedback__error-window').hide();
         feedbackInputs.forEach(function (item) {
             resetError(item);
         })
@@ -112,7 +184,7 @@ $(function () {
         flip();
     })
 
-    // map
+
 
 
 });

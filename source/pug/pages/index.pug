@@ -5,25 +5,15 @@ block title
     title Welcome
 
 block body
-    .preloader
-        .preloader__content
-            .preloader__pic
-                svg(version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve")
-                g
-                    path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005")
-                g
-                    path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684")
-                g
-                    path(fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362")
-            span.preloader__value(data-unit='%', id='preloaderCounter') 100
+    block preloader
+        include ../sections/preloader.pug
     .wrapper
         .maincontent
 
             block header
                 header.header
                     .authorization
-                        a.authorization__link(href="#") Авторизироваться
+                        a.authorization__link(href="#authorization") Авторизироваться
 
             block content
                 .content__welcome
@@ -53,10 +43,10 @@ block body
                         .authorization__form
                             label.form__label
                                 i(class="fa fa-user form__label-icon" aria-hidden="true")
-                                input.form__input(name="login" placeholder="Логин")
+                                input.form__input(id="authLogin" name="login" placeholder="Логин")
                             label.form__label
                                 i(class="fa fa-key form__label-icon" aria-hidden="true")
-                                input.form__input(name="password" type="password" placeholder="Пароль")
+                                input.form__input(id="authPassword" name="password" type="password" placeholder="Пароль")
                             .form__checkbox
                                 input.form__input-checkbox(type="checkbox" name="captcha" id="checkbox1")
                                 label.form__label-checkbox(for="checkbox1")
@@ -73,14 +63,16 @@ block body
                             nav.nav
                                 ul.nav__list
                                     li.nav__item.nav__item-auth
-                                        a.nav__link(href="#")
+                                        a.nav__link(href="")
                                             .nav__text На главную
                                     li.nav__item.nav__item-auth
-                                        a.nav__link(href="#")
+                                        a.nav__link.nav__link-auth(href="#")
                                             .nav__text Войти
 block footer
     .footer__content
         .footer__text  © Елизавета Овинова | создано с любовью в LoftSchool | 2016
+
+
 
 
 

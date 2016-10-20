@@ -1,23 +1,53 @@
 .preloader {
-  display: none;
   position: fixed;
   z-index: 10000;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background-img: url('../img/preloader/forest_prel_bg.jpg');
-  color: #fff;
-  opacity: 1;
-  transition: opacity 0.5s;
+  background: url('../img/preloader/forest_prel_bg.jpg');
 }
 
-.preloader__content {
-  position: relative;
-  width: 100px;
+.preloader__spiner {
+  width: 80px;
   height: 100px;
-  margin: auto;
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.preloader__pic {
+  position: relative;
+  path {
+    stroke: $white;
+    stroke-dasharray: 100 520;
+  }
+}
+.wave1 {
+  animation: dash 1s linear infinite;
+}
+.wave2 {
+  animation: dash 1.5s linear infinite;
+}
+.wave3 {
+  animation: dash 2s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: -520;
+  }
+}
+
+.preloader__percents {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  color: white;
+  font-size: 20px;
+}
 

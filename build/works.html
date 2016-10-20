@@ -59,7 +59,7 @@
           </section>
           <section class="slider">
             <ul class="slider__list">
-              <li class="slider__item">
+              <li class="slider__item slider__item-active">
                 <div class="slider__left" id="a"><img class="slider__left-img" src="./assets/img/works/work-1.png"></div>
                 <div class="slider__right" id="b">
                   <div class="slider__right-content">
@@ -74,24 +74,67 @@
                     <button class="slider__button"><a class="slider__button-link"><i class="fa fa-link slider__button-fa" aria-hidden="true"></i><span>Посмотреть сайт</span></a></button>
                   </div>
                 </div>
-                <div class="slider__arrows">
-                  <div class="slider__arrows-left arrows__works"><a class="slider__arrows-link"><img class="slider__arrows-img" src="./assets/img/icons/portf_arrow_left.png"></a></div>
-                  <div class="slider__arrows-right arrows__works"><a class="slider__arrows-link"><img class="slider__arrows-img" src="./assets/img/icons/portf_arrow_right.png"></a></div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__left" id="e"><img class="slider__left-img" src="./assets/img/works/work-1.png"></div>
+                <div class="slider__right" id="f">
+                  <div class="slider__right-content">
+                    <div class="slider__title">
+                      <div class="general__title slider-title">Сайт школы онлайн образования</div>
+                    </div>
+                    <ul class="slider__right-list">
+                      <li class="slider__right-item"><span class="slider__right-text">Html,</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Css,</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Javascript</span></li>
+                    </ul>
+                    <button class="slider__button"><a class="slider__button-link"><i class="fa fa-link slider__button-fa" aria-hidden="true"></i><span>Посмотреть сайт</span></a></button>
+                  </div>
                 </div>
-                <div class="slider__dots">
-                  <ul class="slider__dots-list">
-                    <li class="slider__dots-item"><a class="slider__dots-link"></a></li>
-                    <li class="slider__dots-item"><a class="slider__dots-link"></a></li>
-                    <li class="slider__dots-item"><a class="slider__dots-link"></a></li>
-                    <li class="slider__dots-item"><a class="slider__dots-link"></a></li>
-                  </ul>
+              </li>
+              <li class="slider__item slider__item-active">
+                <div class="slider__left" id="a"><img class="slider__left-img" src="./assets/img/works/work-1.png"></div>
+                <div class="slider__right" id="b">
+                  <div class="slider__right-content">
+                    <div class="slider__title">
+                      <div class="general__title slider-title">Сайт школы онлайн образования</div>
+                    </div>
+                    <ul class="slider__right-list">
+                      <li class="slider__right-item"><span class="slider__right-text">Html,</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Css,</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Javascript</span></li>
+                    </ul>
+                    <button class="slider__button"><a class="slider__button-link"><i class="fa fa-link slider__button-fa" aria-hidden="true"></i><span>Посмотреть сайт</span></a></button>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item slider__item-active">
+                <div class="slider__left" id="a"><img class="slider__left-img" src="./assets/img/works/work-1.png"></div>
+                <div class="slider__right" id="b">
+                  <div class="slider__right-content">
+                    <div class="slider__title">
+                      <div class="general__title slider-title">Сайт школы онлайн образования</div>
+                    </div>
+                    <ul class="slider__right-list">
+                      <li class="slider__right-item"><span class="slider__right-text">Html,</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Css,</span></li>
+                      <li class="slider__right-item"><span class="slider__right-text">Javascript</span></li>
+                    </ul>
+                    <button class="slider__button"><a class="slider__button-link"><i class="fa fa-link slider__button-fa" aria-hidden="true"></i><span>Посмотреть сайт</span></a></button>
+                  </div>
                 </div>
               </li>
             </ul>
+            <div class="slider__arrows">
+              <div class="slider__arrows-left arrows__works"><a class="slider__arrows-link"><img class="slider__arrows-img" src="./assets/img/icons/portf_arrow_left.png"></a></div>
+              <div class="slider__arrows-right arrows__works"><a class="slider__arrows-link"><img class="slider__arrows-img" src="./assets/img/icons/portf_arrow_right.png"></a></div>
+            </div>
+            <div class="slider__dots">
+              <ul class="slider__dots-list"></ul>
+            </div>
           </section>
           <section class="works__bottom">
             <div class="works__bottom-title">
-              <div class="general__title works__bottom-title-after works__title">Что обо мне говорят</div>
+              <div class="general__title works__bottom-title-after">Что обо мне говорят</div>
             </div>
             <div class="works__quote">
               <ul class="quote__list">
@@ -111,15 +154,18 @@
               <div class="feedback__title">
                 <div class="general__title feedback__title-after">Связаться со мной</div>
               </div>
-              <form class="feedback__form">
+              <form class="feedback__form" novalidate>
                 <label class="feedback__label">
                   <input class="feedback__input" name="name" id="feedbackName" type="name" placeholder="Имя" required>
+                  <div class="feedback__error-window">Введите имя</div>
                 </label>
                 <label class="feedback__label">
                   <input class="feedback__input" name="mail" id="feedbackEmail" type="email" placeholder="Email" required>
+                  <div class="feedback__error-window">Введите e-mail</div>
                 </label>
                 <label class="feedback__label">
                   <textarea class="feedback__textarea" name="textarea" id="feedbackTextarea" type="text" placeholder="Ваше сообщение" required></textarea>
+                  <div class="feedback__error-window">Введите сообщение</div>
                 </label>
                 <div class="feedback__button">
                   <button class="button button__submit" type="submit">Отправить</button>
@@ -169,5 +215,17 @@
         </div>
       </div>
     </footer>
+    <div class="preloader">
+      <div class="preloader__spiner">
+        <div class="preloader__pic">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve">
+            <path class="wave1" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.80 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.80 c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+            <path class="wave2" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684"></path>
+            <path class="wave3" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362"></path>
+          </svg>
+        </div>
+        <div class="preloader__percents">0</div>
+      </div>
+    </div>
   </body>
 </html>

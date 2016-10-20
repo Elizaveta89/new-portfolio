@@ -15,25 +15,21 @@
   </head>
   <body>
     <div class="preloader">
-      <div class="preloader__content">
+      <div class="preloader__spiner">
         <div class="preloader__pic">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve"></svg>
-          <g>
-            <path fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
-          </g>
-          <g>
-            <path fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684"></path>
-          </g>
-          <g>
-            <path fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362"></path>
-          </g>
-        </div><span class="preloader__value" data-unit="%" id="preloaderCounter">100</span>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve">
+            <path class="wave1" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.80 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.80 c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+            <path class="wave2" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684"></path>
+            <path class="wave3" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362"></path>
+          </svg>
+        </div>
+        <div class="preloader__percents">0</div>
       </div>
     </div>
     <div class="wrapper">
       <div class="maincontent">
         <header class="header">
-          <div class="authorization"><a class="authorization__link" href="#">Авторизироваться</a></div>
+          <div class="authorization"><a class="authorization__link" href="#authorization">Авторизироваться</a></div>
         </header>
         <div class="content__welcome">
           <div class="welcome welcome__back">
@@ -68,10 +64,10 @@
             <div class="authorization__title general__title">Авторизируйтесь</div>
             <div class="authorization__form">
               <label class="form__label"><i class="fa fa-user form__label-icon" aria-hidden="true"></i>
-                <input class="form__input" name="login" placeholder="Логин">
+                <input class="form__input" id="authLogin" name="login" placeholder="Логин">
               </label>
               <label class="form__label"><i class="fa fa-key form__label-icon" aria-hidden="true"></i>
-                <input class="form__input" name="password" type="password" placeholder="Пароль">
+                <input class="form__input" id="authPassword" name="password" type="password" placeholder="Пароль">
               </label>
               <div class="form__checkbox">
                 <input class="form__input-checkbox" type="checkbox" name="captcha" id="checkbox1">
@@ -88,9 +84,9 @@
               </div>
               <nav class="nav">
                 <ul class="nav__list">
-                  <li class="nav__item nav__item-auth"><a class="nav__link" href="#">
+                  <li class="nav__item nav__item-auth"><a class="nav__link" href="">
                       <div class="nav__text">На главную</div></a></li>
-                  <li class="nav__item nav__item-auth"><a class="nav__link" href="#">
+                  <li class="nav__item nav__item-auth"><a class="nav__link nav__link-auth" href="#">
                       <div class="nav__text">Войти</div></a></li>
                 </ul>
               </nav>
@@ -104,5 +100,17 @@
         <div class="footer__text"> © Елизавета Овинова | создано с любовью в LoftSchool | 2016</div>
       </div>
     </footer>
+    <div class="preloader">
+      <div class="preloader__spiner">
+        <div class="preloader__pic">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve">
+            <path class="wave1" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.80 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.80 c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+            <path class="wave2" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684"></path>
+            <path class="wave3" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362"></path>
+          </svg>
+        </div>
+        <div class="preloader__percents">0</div>
+      </div>
+    </div>
   </body>
 </html>
