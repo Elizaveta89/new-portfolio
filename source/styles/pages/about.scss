@@ -249,18 +249,15 @@
   top: 50%;
   transform: translate(-50%, -50%);
   color: #649751;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.0;
 }
 
-.contacts__map {
-  height: 790px;
-  background: url("../img/background/map.png") no-repeat;
-  background-size: cover;
+.map {
+  height: 950px;
   position: relative;
-  padding-bottom: 300px;
 }
 
 .contacts__window {
@@ -268,9 +265,8 @@
   padding: 20px 0;
   background-color: rgba(244, 245, 240, 0.7);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 69%;
+  left: 40%;
   @include tablets {
     top: 40%;
   }

@@ -45,6 +45,7 @@
   z-index: 99;
   background: rgba(126, 155, 92, 0.8);
   padding-top: 100px;
+  animation: displace .5s forwards;
 }
 
 .header__menu-active {
@@ -52,12 +53,11 @@
 }
 
 .header__menu-item {
-  margin: 50px  0;
-  padding-bottom: 20px;
+  margin: 70px  0;
   &:hover {
     &:after {
       content: "";
-      border: 1px solid white;
+      outline: 1px solid white;
       width: 100px;
       margin: auto;
       display: block;
@@ -115,5 +115,19 @@
   }
 }
 
-
-
+@keyframes displace {
+  0% {
+    background: linear-gradient(rgba(126, 155, 92, 0.8), rgba(126, 155, 92, 0.8)) left, linear-gradient(rgba(126, 155, 92, 0.8), rgba(126, 155, 92, 0.8)) right;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+  }
+  99% {
+    background: linear-gradient(rgba(126, 155, 92, 0.8), rgba(126, 155, 92, 0.8)) left, linear-gradient(rgba(126, 155, 92, 0.8), rgba(126, 155, 92, 0.8)) right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: rgba(126, 155, 92, 0.8);
+    background-repeat: no-repeat;
+  }
+}

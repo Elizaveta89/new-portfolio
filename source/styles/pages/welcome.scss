@@ -1,7 +1,21 @@
-body {
-  background: url("../img/background/water.jpg") no-repeat;
-  background-size: cover;
+
+.Background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), transparent 50%, rgba(0, 0, 0, 0.5));
+  }
 }
+
 
 .header {
   width: 100%;
@@ -44,9 +58,12 @@ body {
 .content__welcome {
   height: 400px;
   width: 380px;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   transform-style: preserve-3d;
   transition: transform .6s;
 }
@@ -113,6 +130,7 @@ body {
   }
 }
 .socials__welcome {
+  text-align: center;
   margin-bottom: 81px;
 }
 
@@ -182,12 +200,18 @@ body {
   text-align: center;
 }
 
-.footer__content {
+.footer__content-welcome {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  opacity: 0.85;
   text-align: center;
 }
 
 .footer__text {
-  padding-top: 20px;
   color: $white;
   opacity: 0.9;
 }

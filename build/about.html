@@ -14,6 +14,18 @@
     <title>About</title>
   </head>
   <body>
+    <div class="preloader">
+      <div class="preloader__spiner">
+        <div class="preloader__pic">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve">
+            <path class="wave1" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.80 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.80 c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+            <path class="wave2" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684"></path>
+            <path class="wave3" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362"></path>
+          </svg>
+        </div>
+        <div class="preloader__percents">0</div>
+      </div>
+    </div>
     <div class="wrapper wrapper__about">
       <div class="maincontent">
         <div class="header__about">
@@ -30,9 +42,9 @@
               <div class="header__menu-button_active"></div>
               <ul class="header__menu-list">
                 <li class="header__menu-item"><a class="header__menu-link" href="http://ovinovaportfolio.ru/works.html"><span class="header__menu-text">Мои работы</span></a></li>
-                <li class="header__menu-item"><a class="header__menu-link" http://ovinovaportfolio.ru/about.html><span class="header__menu-text">Обо мне</span></a></li>
-                <li class="header__menu-item"><a class="header__menu-link" http://ovinovaportfolio.ru/blog.html><span class="header__menu-text">Блог</span></a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="#"><span class="header__menu-text">Авторизация</span></a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="http://ovinovaportfolio.ru/about.html"><span class="header__menu-text">Обо мне</span></a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="http://ovinovaportfolio.ru/blog.html"><span class="header__menu-text">Блог</span></a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="http://ovinovaportfolio.ru"><span class="header__menu-text">Главная</span></a></li>
               </ul>
             </nav>
           </div>
@@ -162,16 +174,15 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map" id="map">
-          <div class="contacts__window">
-            <div class="general__title contacts__title"><span>Контакты</span></div>
-            <ul class="contacts__list">
-              <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/skype.png" alt="Скайп"><span class="contacts__item-text">stopangina</span></a></li>
-              <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/envelope.png" alt="Почта"><span class="contacts__item-text">eovinova89@gmail.com</span></a></li>
-              <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/phone.png" alt="Почта"><span class="contacts__item-text">+7 906 727 38 31</span></a></li>
-              <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/map_marker.png" alt="Почта"><span class="contacts__item-text">Москва, м. Братиславская</span></a></li>
-            </ul>
-          </div>
+        <div class="map" id="map"></div>
+        <div class="contacts__window">
+          <div class="general__title contacts__title"><span>Контакты</span></div>
+          <ul class="contacts__list">
+            <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/skype.png" alt="Скайп"><span class="contacts__item-text">stopangina</span></a></li>
+            <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/envelope.png" alt="Почта"><span class="contacts__item-text">eovinova89@gmail.com</span></a></li>
+            <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/phone.png" alt="Почта"><span class="contacts__item-text">+7 906 727 38 31</span></a></li>
+            <li class="contacts__item"><a class="contacts__link" href="#"><img class="contacts__item-pic" src="./assets/img/icons/map_marker.png" alt="Почта"><span class="contacts__item-text">Москва, м. Братиславская</span></a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -212,17 +223,5 @@
         </div>
       </div>
     </footer>
-    <div class="preloader">
-      <div class="preloader__spiner">
-        <div class="preloader__pic">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="95.113px" viewBox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve">
-            <path class="wave1" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.80 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.80 c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
-            <path class="wave2" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684"></path>
-            <path class="wave3" fill="none" stroke="#231F20" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801 c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801 c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362"></path>
-          </svg>
-        </div>
-        <div class="preloader__percents">0</div>
-      </div>
-    </div>
   </body>
 </html>

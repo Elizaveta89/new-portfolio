@@ -184,13 +184,15 @@
   width: 100%;
   background: #80a971;
   color: $white;
+  text-align: center;
 }
 
 .footer__text-about {
   text-align: left;
-  width: 356px;
+  width: 349px;
   opacity: 0.5;
   font-family: $font-light;
+  padding-left: 27px;
   @include tablets {
     width: auto;
   }

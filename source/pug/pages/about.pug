@@ -7,6 +7,8 @@ block title
     title About
 
 block body
+    block preloader
+        include ../sections/preloader.pug
     .wrapper.wrapper__about
         .maincontent
 
@@ -93,29 +95,26 @@ block body
                                                 circle.skills__circle-grey(r="16" cx="16" cy="16")
                                                 circle.skills__circle-green.skills__circle-Mongo(r="16" cx="16" cy="16" stroke-dasharray="55 100")
                                                 .skills__circle-text Bower
-                .contacts__map(id="map")
-                    .contacts__window
-                        .general__title.contacts__title
-                            span Контакты
-                        ul.contacts__list
-                            li.contacts__item
-                                a.contacts__link(href="#")
-                                    img.contacts__item-pic(src="./assets/img/icons/skype.png" alt="Скайп")
-                                    span.contacts__item-text stopangina
-                            li.contacts__item
-                                a.contacts__link(href="#")
-                                    img.contacts__item-pic(src="./assets/img/icons/envelope.png" alt="Почта")
-                                    span.contacts__item-text eovinova89@gmail.com
-                            li.contacts__item
-                                a.contacts__link(href="#")
-                                    img.contacts__item-pic(src="./assets/img/icons/phone.png" alt="Почта")
-                                    span.contacts__item-text +7 906 727 38 31
-                            li.contacts__item
-                                a.contacts__link(href="#")
-                                    img.contacts__item-pic(src="./assets/img/icons/map_marker.png" alt="Почта")
-                                    span.contacts__item-text Москва, м. Братиславская
-block footer
-    include ../sections/footer.pug
-
-block preloader
-    include ../sections/preloader.pug
+                .map(id="map")
+                .contacts__window
+                    .general__title.contacts__title
+                        span Контакты
+                    ul.contacts__list
+                        li.contacts__item
+                            a.contacts__link(href="#")
+                                img.contacts__item-pic(src="./assets/img/icons/skype.png" alt="Скайп")
+                                span.contacts__item-text stopangina
+                        li.contacts__item
+                            a.contacts__link(href="#")
+                                img.contacts__item-pic(src="./assets/img/icons/envelope.png" alt="Почта")
+                                span.contacts__item-text eovinova89@gmail.com
+                        li.contacts__item
+                            a.contacts__link(href="#")
+                                img.contacts__item-pic(src="./assets/img/icons/phone.png" alt="Почта")
+                                span.contacts__item-text +7 906 727 38 31
+                        li.contacts__item
+                            a.contacts__link(href="#")
+                                img.contacts__item-pic(src="./assets/img/icons/map_marker.png" alt="Почта")
+                                span.contacts__item-text Москва, м. Братиславская
+    block footer
+        include ../sections/footer.pug

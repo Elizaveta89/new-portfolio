@@ -5,6 +5,8 @@ block title
     title Works
 
 block body
+    block preloader
+        include ../sections/preloader.pug
     .wrapper.wrapper__works
         .maincontent
             block header__about
@@ -35,7 +37,7 @@ block body
                                                 span Посмотреть сайт
                             li.slider__item
                                 .slider__left(id='e')
-                                    img.slider__left-img(src="./assets/img/works/work-1.png")
+                                    img.slider__left-img(src="./assets/img/works/work-2.png")
                                 .slider__right(id='f')
                                     .slider__right-content
                                         .slider__title
@@ -53,7 +55,7 @@ block body
                                                 span Посмотреть сайт
                             li.slider__item.slider__item-active
                                 .slider__left(id='a')
-                                    img.slider__left-img(src="./assets/img/works/work-1.png")
+                                    img.slider__left-img(src="./assets/img/works/work-3.png")
                                 .slider__right(id='b')
                                     .slider__right-content
                                         .slider__title
@@ -71,7 +73,7 @@ block body
                                                 span Посмотреть сайт
                             li.slider__item.slider__item-active
                                 .slider__left(id='a')
-                                    img.slider__left-img(src="./assets/img/works/work-1.png")
+                                    img.slider__left-img(src="./assets/img/works/work-4.png")
                                 .slider__right(id='b')
                                     .slider__right-content
                                         .slider__title
@@ -97,6 +99,8 @@ block body
                         .slider__dots
                             ul.slider__dots-list
                     section.works__bottom
+                        .works__bottom-img
+                            img.works__bottom-pic(src="./assets/img/background/bg-works.jpg" alt="фон")
                         .works__bottom-title
                             .general__title.works__bottom-title-after Что обо мне говорят
                         .works__quote
@@ -118,6 +122,7 @@ block body
                                         span.quote__name-text Зар Захаров
                                         span.quote__name-fonts - преподаватель
                         .works__feedback
+                            .works__feedback-blur
                             .feedback__title
                                 .general__title.feedback__title-after Связаться со мной
                             form.feedback__form(novalidate)
@@ -136,10 +141,15 @@ block body
                         .arrow__up
                             a.arrow__link.arrow__pic-up(href="#")
                                 i(class="fa fa-chevron-up arrow__pic" aria-hidden="true")
-block footer
-    include ../sections/footer.pug
-block preloader
-    include ../sections/preloader.pug
+                    section.window__reset
+                        .window__reset-message
+                            .window__reset-text Сообщение отправленно
+                            button.window__reset-button
+                                span.window__reset-button-text Закрыть
+
+
+    block footer
+        include ../sections/footer.pug
 
 
 
