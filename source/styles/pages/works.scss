@@ -15,8 +15,7 @@
 }
 
 .works__title {
-  background: url("../img/icons/works.png") no-repeat;
-  background-position: 50% -2px;
+  background: url("../img/icons/works.png") center no-repeat;
   color: #373e42;
   font-size: 63px;
   max-width: 500px;
@@ -25,57 +24,37 @@
   &:after {
     margin: 22px auto;
   }
-  @include phones {
-    font-size: 35px;
-    max-width: 100%;
-    background-size: contain;
-    background-position: 12px -9px;
-    padding: 40px;
+  @include  tablets {
+    font-size: 48px;
   }
-  @include mini-phones {
+  @include phones {
+    background-size: 85%;
     font-size: 35px;
-    max-width: 100%;
-    background-size: contain;
-    background-position: 12px 5px;
-    padding: 40px;
   }
 }
 
 .works__bottom {
+  background: url('../img/background/bg-works.jpg') center no-repeat;
   position: relative;
   padding-bottom: 200px;
-  @include phones {
-    height:100%;
-    padding-bottom: 500px;
+  @include tablets {
+    background: url('../img/background/bg-works-phone.jpg') center 267px no-repeat;
+    padding-bottom: 231px;
   }
-  @include mini-phones {
-    height:100%;
-    padding-bottom: 500px;
+  @include  phones {
+    background: url('../img/background/bg-works-phone.jpg') center 435px no-repeat;
   }
-}
-
-.works__bottom-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  min-width: 1800px;
-  overflow: hidden;
-  background-size: contain;
-}
-
-.works__bottom-pic {
-  display: block;
-  width: 100%;
 }
 
 .works__bottom-title {
   padding-top: 50px;
   background: url(../img/icons/about.png) no-repeat;
   background-position: 50% 50%;
-  background-size: 30%;
+  background-size: 40%;
+  @include tablets {
+    margin-bottom: 0;
+    background-size: 60%;
+  }
 }
 
 .works__bottom-title-after {
@@ -87,28 +66,32 @@
   &:after {
     margin: 30px auto;
   }
+  @include tablets {
+    padding-top: 0;
+    font-size: 48px;
+  }
+  @include phones {
+    font-size: 35px;
+  }
 }
 
 .works__quote {
   max-width: 900px;
   margin: auto;
   margin-bottom: 65px;
+  @include tablets {
+    margin: 65px 0;
+  }
 }
 
 .quot__item {
   @include inlineblock(middle);
   width: 385px;
-  @include phones {
-    display: block;
-    vertical-align: baseline;
-    width: 100%;
-    margin-bottom: 20px;
+  @include tablets {
+    width: 350px;
   }
-  @include mini-phones {
-    display: block;
-    vertical-align: baseline;
-    width: 100%;
-    margin-bottom: 20px;
+  @include phones {
+    margin-bottom: 40px;
   }
 }
 .quote__foto {
@@ -141,16 +124,6 @@
   font-family: 'robotoitalic';
 }
 
-.quote__name {
-  @include phones {
-    text-align: right;
-    margin-right: 62px;
-  }
-  @include mini-phones {
-    text-align: right;
-    margin-right: 62px;
-  }
-}
 
 .quote__name-fonts {
   display: block;
@@ -167,9 +140,6 @@
   margin-bottom: 60px;
   position: relative;
   z-index: 10;
-  @include mini-phones {
-    width: 100%;
-  }
 }
 
 .works__feedback-blur {
@@ -323,5 +293,14 @@
 
   &:hover {
     background-color: #4e8839;
+  }
+}
+
+.arrow__up{
+  @include tablets {
+    margin-bottom: 75px;
+  }
+  @include phones {
+    margin-bottom: 120px;
   }
 }

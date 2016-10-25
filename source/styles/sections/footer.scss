@@ -1,13 +1,10 @@
 .footer__about {
   margin-top: -210px;
   @include tablets {
-    margin-top: -308px;
+    margin-top: -289px;
   }
   @include phones {
-    margin-top: -396px;
-  }
-  @include mini-phones {
-    margin-top: -439px;
+    margin-top: -378px;
   }
 }
 
@@ -29,11 +26,6 @@
     padding:0 10px;
   }
   @include phones {
-    display: block;
-    vertical-align: baseline;
-    width: 90%;
-  }
-  @include mini-phones {
     display: block;
     vertical-align: baseline;
     width: 90%;
@@ -61,15 +53,6 @@
     padding: 10px 0;
     width: 90%;
   }
-  @include mini-phones {
-    display: block;
-    vertical-align: baseline;
-    border-bottom: 1px solid #757a7d;
-    text-align: center;
-    margin: 0 10px;
-    padding: 10px 0;
-    width: 90%;
-  }
   &:before {
     content: "";
     border-left: 1px solid #757a7d;
@@ -77,9 +60,6 @@
     position: absolute;
     left: 0;
     @include phones {
-      border-left: 0;
-    }
-    @include mini-phones {
       border-left: 0;
     }
   }
@@ -97,9 +77,6 @@
   margin-left: 16px;
   @include laptop {
     margin-left: 18px;
-  }
-  @include mini-phones {
-    margin-left: 5px;
   }
   &:first-child {
     margin-left: 0;
@@ -145,12 +122,6 @@
   color: $white;
   font-family: $font-light;
   padding-left: 30px;
-  @include mini-phones {
-    max-width: 300px;
-    text-align: center;
-    margin: auto;
-    padding-top: 10px;
-  }
 }
 
 .footer__quote-text {
@@ -192,17 +163,11 @@
   width: 349px;
   opacity: 0.5;
   font-family: $font-light;
-  padding-left: 27px;
+  padding-left:27px;
   @include tablets {
     width: auto;
   }
   @include phones {
-    width: 100%;;
-    text-align: center;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #757a7d;
-  }
-  @include mini-phones {
     width: 100%;;
     text-align: center;
     padding-bottom: 15px;

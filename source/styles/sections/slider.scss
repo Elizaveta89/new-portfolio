@@ -6,9 +6,6 @@
   @include phones {
     padding: 0;
   }
-  @include mini-phones {
-    padding: 0;
-  }
 }
 
 .slider__list {
@@ -31,20 +28,16 @@
     float: none;
   }
 }
+
 .slider__left-img {
   padding: 50px 50px 0 50px;
   @include tablets {
-    padding: 100px 50px 0 50px;
+    padding: 73px 50px;
+    width: 62%;
   }
   @include phones {
-    width: 400px;
-    height: 450px;
-    padding: 85px 0 0px 42px;
-  }
-  @include mini-phones {
-    width: 260px;
-    height: 361px;
-    padding: 85px 0 0 0;
+    padding-top: 85px;
+    width: 71%;
   }
 }
 
@@ -69,10 +62,7 @@
     margin-top: 0;
   }
   @include phones {
-    margin: 30px 0 0 40px
-  }
-  @include mini-phones {
-    margin: 26px 0;
+    margin: 30px 40px;
   }
 }
 
@@ -89,7 +79,7 @@
     max-width: 100%;
     margin-bottom: 20px;
     &:after {
-      margin: auto;
+      margin: 30px auto;
     }
   }
 }
@@ -98,6 +88,7 @@
   text-align: left;
   margin-bottom: 50px;
   @include tablets {
+    margin-bottom: 33px;
     text-align: center;
   }
 
@@ -127,9 +118,6 @@
     left: 29%;
   }
   @include phones {
-    left: 16%;
-  }
-  @include mini-phones{
     left: 16%;
   }
   &:hover {

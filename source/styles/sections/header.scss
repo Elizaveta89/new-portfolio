@@ -76,11 +76,7 @@
 }
 
 .header__about-user {
-  background: url("../img/icons/portfolio.png") no-repeat;
-  background-position: 333px -41px;
-  @include laptop {
-    background-position: 0;
-  }
+  background: url("../img/icons/portfolio.png") center no-repeat;
   @include tablets {
     background-size: contain;
   }

@@ -144,6 +144,14 @@ $(function () {
         }
     })
 
+    $('.blog__nav').on('click', function(){
+        if ($(this).hasClass('blog__nav-active')) {
+            $(this).removeClass('blog__nav-active');
+        }else {
+            $(this).addClass('blog__nav-active');
+        }
+    });
+
     // arrow_up
 
     $(".arrow__pic-up").click(function () {
