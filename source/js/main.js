@@ -47,7 +47,7 @@ $(function () {
         var percent = Math.ceil(current / total * 100);
         if (percent >= 100) {
             $('.preloader').fadeOut();
-            // $('.wrapper').show(0, onPagePreload);
+            onPagePreload();
         }
         $('.preloader__percents').text(percent);
     }

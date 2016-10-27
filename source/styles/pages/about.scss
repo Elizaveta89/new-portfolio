@@ -45,14 +45,16 @@
   display: inline-block;
   vertical-align: top;
   font-size: 63px;
-  padding: 58px;
+  padding: 20px 58px;
   @include inlineblock();
   font-size: 63px;
   &:after {
     margin: 9px auto;
   }
   @include laptop {
-    padding-bottom: 24px;
+    background-position: 10px 0;
+    background-size: 93%;
+    padding: 33px 58px 14px 58px;
     vertical-align: baseline;
   }
 }
@@ -64,7 +66,7 @@
 }
 
 .about__left-foto {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .about__left-img {
@@ -82,7 +84,6 @@
   color: #566358;
   text-align: left;
   max-width: 420px;
-  margin: auto;
   line-height: 1.8;
 
   p {
@@ -271,5 +272,8 @@
 .contacts__item-text {
   color: #65777c;
   padding-left: 10px;
+  &:hover {
+    color: $green-dark;
+  }
 }
 
